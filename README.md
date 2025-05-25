@@ -72,11 +72,6 @@
 - [Vulnerability Management with Nessus Essentials](https://youtu.be/mnjxUoBTyKs?si=8334AFSz9F-1BVMG)
 - [Azure Sentinel 8 Lab complete playlist](https://www.youtube.com/playlist?list=PLTNt8j7SunIDfFKRerAPNIGWuj16UfLgO)
   
- <h2>🐍 My Contributions 🐍</h2>
-  <br>
-  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/JayeshKakkad-Rotoclear/JayeshKakkad-Rotoclear/output/github-contribution-grid-snake.svg" />
-  
-  <br/><br/><br/>
 </div>
 
 <hr/>
