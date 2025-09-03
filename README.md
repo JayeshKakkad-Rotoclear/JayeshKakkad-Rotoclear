@@ -53,14 +53,11 @@
 ### GitHub Stats & Insights  
 
 <div align="center">
-  <!-- GitHub stats -->
-  <img width=390 src="https://github-readme-stats.vercel.app/api?username=CyberfolioChronicles&show_icons=true&theme=github_dark&rank_icon=github&border_radius=10&count_private=true" alt="readme stats" />
-  <!-- Languages -->
   <img width=325 src="https://github-readme-stats.vercel.app/api/top-langs/?username=CyberfolioChronicles&langs_count=8&layout=compact&theme=github_dark&border_radius=10&count_private=true&hide=html,css" alt="top langs" />
 </div>
 
 <div align="center">
-  <img alt="Metrics (private-aware)" src="./metrics.svg" width="95%">
+  <img alt="Metrics (private-aware)" src="./github-metrics.svg" width="95%">
 </div>
 
 ---
