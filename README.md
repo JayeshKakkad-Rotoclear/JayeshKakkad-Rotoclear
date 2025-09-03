@@ -1,7 +1,7 @@
 <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=JayeshKakkad-Rotoclear.JayeshKakkad-Rotoclear" />
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=32&center=true&vCenter=true&width=600&height=70&duration=4000&lines=Welcome!;I'm+Jayesh+Kakkad;Software+Architect+at+Rotoclear;Full+Stack+Developer+%7C+Cybersecurity+Enthusiast" />
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=32&center=true&vCenter=true&width=600&height=70&duration=4000&lines=Welcome!;I'm+Jayesh+Kakkad;Software+Architect+at+Rotoclear" />
 </h1>
 
 <h3 align="center">
