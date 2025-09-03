@@ -1,0 +1,52 @@
+name: Metrics
+on:
+  schedule:
+    - cron: "0 */12 * * *"   # refresh twice daily
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to commit metrics.svg back to the repo
+    steps:
+      - name: Generate metrics
+        uses: lowlighter/metrics@latest
+        with:
+          user: CyberfolioChronicles                 # <-- your GitHub username
+          token: ${{ secrets.METRICS_TOKEN }}       # <-- we’ll add this secret in Step 4
+
+          # Base sections
+          template: classic
+          base: header, activity, repositories, metadata
+          config_timezone: Europe/Berlin
+
+          # Include repos beyond your personal account
+          repositories_forks: yes
+          repositories_affiliations: owner, collaborator, organization_member
+          # ^ requires token scopes: repo + read:org (Step 3)
+
+          # Languages (compact and accurate)
+          plugin_languages: yes
+          plugin_languages_indepth: yes
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used
+          plugin_languages_details: bytes-size, percentage
+
+          # Coding habits (kept professional)
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+
+          # Output file in the repo root
+          output_action: commit
+          committer_branch: ${{ github.ref_name }}
+          committer_message: "chore: update metrics.svg"
+
+      # If your repo has branch protection preventing direct commits by workflows,
+      # comment out output_action above and use the step below instead:
+      # - name: Commit generated files
+      #   uses: EndBug/add-and-commit@v9
+      #   with:
+      #     add: "metrics.svg"
+      #     message: "chore: update metrics.svg"
