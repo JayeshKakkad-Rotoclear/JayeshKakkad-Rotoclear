@@ -2,128 +2,334 @@
   <img src="./assets/banner.svg" alt="Jayesh Kakkad - Software Architect & Embedded Systems Engineer" width="100%">
 </div>
 
-<p align="center">
-  <strong>Karlsruhe, Germany</strong><br>
-  <a href="https://jayesh-kakkad.com">Website</a> • 
-  <a href="https://www.linkedin.com/in/jayesh-kakkad">LinkedIn</a> • 
-  <a href="mailto:contact@jayesh-kakkad.com">Email</a> • 
-  <a href="https://www.youtube.com/@Cyberfolio_Chronicles">YouTube</a>
-</p>
+<div align="center">
+  
+### 📍 Karlsruhe, Germany
 
----
+[![Website](https://img.shields.io/badge/🌐_Website-jayesh--kakkad.com-0A66C2?style=flat-square)](https://jayesh-kakkad.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-jayesh--kakkad-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/jayesh-kakkad)
+[![Email](https://img.shields.io/badge/Email-contact%40jayesh--kakkad.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:contact@jayesh-kakkad.com)
+[![YouTube](https://img.shields.io/badge/YouTube-Cyberfolio_Chronicles-FF0000?style=flat-square&logo=youtube)](https://www.youtube.com/@Cyberfolio_Chronicles)
 
-## What I Do
+</div>
 
-I architect and build production systems where hardware constraints meet software scale—from embedded Linux video pipelines to full-stack web platforms. My work spans:
+<br>
 
-- Designing secure-by-design platform architectures for industrial IoT and edge devices
-- Building V4L2/GStreamer-based video processing systems on embedded Linux (Yocto, PTXdist)
-- Developing ERP-integrated workflow automation systems for manufacturing environments
-- Leading full-stack development with modern web technologies (SvelteKit, TypeScript, PostgreSQL)
-- Applying security-minded engineering practices aligned with OWASP standards
-- Mentoring engineers and teaching programming fundamentals to underrepresented communities
+<div align="center">
 
----
+## 💡 What I Do
 
-## Core Domains
+</div>
 
-**Industrial Camera Systems** – Architecting embedded firmware and backend systems for real-time image capture, processing, and analysis on custom hardware platforms.
+```text
+I architect and build production systems where hardware constraints meet 
+software scale—from embedded Linux video pipelines to full-stack web platforms.
+```
 
-**Embedded Linux Video Pipelines** – Deep experience with V4L2, GStreamer, codec optimization, and kernel-space video subsystems for resource-constrained devices.
+<table>
+<tr>
+<td width="50%">
 
-**Full-Stack Web Applications** – Building scalable, maintainable web platforms with SvelteKit, React, TypeScript, and PostgreSQL, focusing on developer experience and performance.
+**Platform Architecture**
+- Secure-by-design industrial IoT systems
+- Multi-tenant edge device orchestration
+- Microservices & distributed systems
 
-**Security Engineering** – Threat modeling, secure SDLC, IoT security (OWASP IoT Top 10), and hands-on penetration testing with Kali Linux toolchains.
+**Embedded Engineering**
+- V4L2/GStreamer video pipelines
+- Embedded Linux (Yocto, PTXdist)
+- Real-time processing on ZynqMP
 
-**Workflow Automation & ERP Integration** – Connecting disparate business systems (Salesforce, Monday.com, Zebra printers) with resilient, auditable workflows for manufacturing and logistics.
+</td>
+<td width="50%">
 
----
+**Full-Stack Development**
+- SvelteKit, React, TypeScript
+- PostgreSQL, FastAPI, Node.js
+- ERP integrations & workflow automation
 
-## Tech Stack
+**Security & Best Practices**
+- OWASP Top 10 & IoT Top 10
+- Threat modeling & secure SDLC
+- Penetration testing (Kali toolchain)
 
-### Languages
-C/C++, Nim, Python, TypeScript, JavaScript, SQL
+</td>
+</tr>
+</table>
 
-### Frontend
-SvelteKit, React, Tailwind CSS, Framer Motion
+<br>
 
-### Backend & Databases
-FastAPI, Node.js, Express, PostgreSQL, Supabase, Prisma ORM
+<div align="center">
 
-### Embedded & Systems
-Embedded Linux, V4L2, GStreamer, Yocto Project, PTXdist, RAUC, ZynqMP, RTOS concepts
+## 🎯 Core Domains
 
-### DevOps & Tools
-Docker, GitHub Actions, Git, Linux (Debian, Ubuntu, Arch), GDB, Wireshark, VS Code
+</div>
 
-### Security
-OWASP Top 10, OWASP IoT Top 10, Kali Linux, Burp Suite, Nessus, Azure Sentinel, threat modeling, secure SDLC
+<table>
+<tr>
+<td>
 
----
+### Industrial Camera Systems
+Architecting embedded firmware and backend systems for real-time image capture, processing, and analysis on custom hardware platforms.
 
-## Featured Projects
+</td>
+</tr>
+<tr>
+<td>
 
-### [EdgeFleet](https://github.com/JayeshKakkad-Rotoclear/edgefleet)
-**Secure Edge Device Orchestration Platform**  
-Multi-tenant platform for managing industrial IoT devices with real-time telemetry, remote configuration, OTA updates (RAUC), and secure command execution. Built with FastAPI, PostgreSQL, SvelteKit, and Docker.  
-`FastAPI` `PostgreSQL` `SvelteKit` `Docker` `MQTT` `RAUC` `Security`
+### Embedded Linux Video Pipelines
+Deep experience with V4L2, GStreamer, codec optimization, and kernel-space video subsystems for resource-constrained devices.
 
-### [Video Pipeline Lab](https://github.com/JayeshKakkad-Rotoclear/video-pipeline-lab)
-**V4L2/GStreamer Concepts Simulator**  
-Educational platform for learning embedded video pipeline concepts. Interactive simulator demonstrating V4L2 abstractions, GStreamer pipeline construction, codec selection, and performance profiling—without requiring physical hardware.  
-`V4L2` `GStreamer` `Embedded Linux` `TypeScript` `React` `Education`
+</td>
+</tr>
+<tr>
+<td>
 
-### [SecureEdge](https://github.com/JayeshKakkad-Rotoclear/secure-edge)
-**IoT Device Security Dashboard**  
-Risk assessment and monitoring platform mapping OWASP IoT Top 10 vulnerabilities. Features device inventory, automated vulnerability scanning, and actionable remediation workflows for industrial IoT deployments.  
-`IoT Security` `OWASP IoT Top 10` `FastAPI` `PostgreSQL` `SvelteKit`
+### Full-Stack Web Applications
+Building scalable, maintainable web platforms with modern frameworks, focusing on developer experience and performance.
 
-### [FlowSync](https://github.com/JayeshKakkad-Rotoclear/flow-sync)
-**ERP Workflow Automation Platform**  
-Visual workflow builder connecting Salesforce, Monday.com, PostgreSQL, and internal manufacturing systems. Enables non-technical users to create auditable, resilient automation workflows with RBAC, retry logic, and comprehensive audit trails.  
-`ERP Integration` `Workflow Automation` `React` `PostgreSQL` `RabbitMQ` `Docker`
+</td>
+</tr>
+<tr>
+<td>
 
-### [System Design Studies](https://github.com/JayeshKakkad-Rotoclear/system-design-studies)
-**Architecture Case Studies & Learning Resources**  
-In-depth explorations of real-world system design challenges: API gateway patterns, rate limiting strategies, distributed tracing, observability architectures, and secure-by-design principles. Includes diagrams, code samples, and decision rationale.  
-`System Design` `Architecture` `Distributed Systems` `Observability` `Security`
+### Security Engineering
+Threat modeling, secure SDLC, IoT security (OWASP IoT Top 10), and hands-on penetration testing with industry-standard tools.
 
-### [Portfolio](https://github.com/JayeshKakkad-Rotoclear/portfolio)
-**Professional Portfolio Website**  
-Premium multi-page portfolio built with React, TypeScript, Material-UI, and Framer Motion. Showcases projects, technical writing, and professional background with a focus on performance, accessibility, and security best practices.  
-`React` `TypeScript` `Material-UI` `Framer Motion` `Vite`
+</td>
+</tr>
+<tr>
+<td>
 
----
+### Workflow Automation & ERP Integration
+Connecting disparate business systems (Salesforce, Monday.com) with resilient, auditable workflows for manufacturing and logistics.
 
-## Mentoring & Teaching
+</td>
+</tr>
+</table>
 
-**Volunteer Instructor – [ReDI School of Digital Integration](https://www.redi-school.org/)** (March 2023 – Present)  
-Teaching programming fundamentals (Python, JavaScript, web development) to students from underrepresented backgrounds. Providing one-on-one mentoring on career development, technical problem-solving, and navigating the tech industry.
+<br>
 
----
+<div align="center">
 
-## Content & Learning
+## 🛠️ Tech Stack
 
-**[YouTube: Cyberfolio Chronicles](https://www.youtube.com/@Cyberfolio_Chronicles)**  
-Tutorials and demonstrations in cybersecurity, cloud security, and hands-on labs:
-- [File Integrity Monitor with PowerShell](https://youtu.be/uDd5R2uEIL0)
-- [Cloud-based Home Lab with AWS](https://youtu.be/xh2xLN_uBlE)
-- [Live RDP Brute Force Detection with Azure Sentinel](https://www.youtube.com/watch?v=yU_YuGYtJGU)
-- [Ransomware PoC (C#)](https://youtu.be/dab8pQ5UVjs)
-- [Vulnerability Management with Nessus Essentials](https://youtu.be/mnjxUoBTyKs)
+</div>
 
----
+<div align="center">
 
-## Contact
+**Languages**
 
-Looking to collaborate on embedded systems, platform architecture, or secure-by-design engineering? Reach out via:
+![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Nim](https://img.shields.io/badge/Nim-FFE953?style=flat-square&logo=nim&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
 
-- **Email:** [contact@jayesh-kakkad.com](mailto:contact@jayesh-kakkad.com)
-- **LinkedIn:** [linkedin.com/in/jayesh-kakkad](https://www.linkedin.com/in/jayesh-kakkad)
-- **Website:** [jayesh-kakkad.com](https://jayesh-kakkad.com)
+**Frontend & UI**
 
----
+![SvelteKit](https://img.shields.io/badge/SvelteKit-FF3E00?style=flat-square&logo=svelte&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+![Material_UI](https://img.shields.io/badge/Material_UI-007FFF?style=flat-square&logo=mui&logoColor=white)
+
+**Backend & Databases**
+
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
+
+**Embedded & Systems**
+
+![Linux](https://img.shields.io/badge/Embedded_Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![GStreamer](https://img.shields.io/badge/GStreamer-4DABF7?style=flat-square)
+![Yocto](https://img.shields.io/badge/Yocto_Project-00ADD8?style=flat-square)
+![V4L2](https://img.shields.io/badge/V4L2-000000?style=flat-square)
+
+**DevOps & Tools**
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![GitHub_Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![VS_Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
+
+**Security Tools**
+
+![Kali_Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=flat-square&logo=kali-linux&logoColor=white)
+![Burp_Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=flat-square)
+![Nessus](https://img.shields.io/badge/Nessus-00C176?style=flat-square)
+![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
+
+</div>
+
+<br>
+
+<div align="center">
+
+## 🚀 Featured Projects
+
+</div>
+
+<table>
+<tr>
+<td width="50%">
+
+### 🌐 [EdgeFleet](https://github.com/JayeshKakkad-Rotoclear/edgefleet)
+**Secure Edge Device Orchestration Platform**
+
+Multi-tenant platform for managing industrial IoT devices with real-time telemetry, remote configuration, OTA updates (RAUC), and secure command execution.
+
+**Tech:** `FastAPI` `PostgreSQL` `SvelteKit` `Docker` `MQTT` `RAUC`
+
+</td>
+<td width="50%">
+
+### 🎥 [Video Pipeline Lab](https://github.com/JayeshKakkad-Rotoclear/video-pipeline-lab)
+**V4L2/GStreamer Concepts Simulator**
+
+Educational platform for learning embedded video pipeline concepts without physical hardware. Interactive simulator with performance profiling.
+
+**Tech:** `V4L2` `GStreamer` `Embedded Linux` `TypeScript` `React`
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🔒 [SecureEdge](https://github.com/JayeshKakkad-Rotoclear/secure-edge)
+**IoT Device Security Dashboard**
+
+Risk assessment platform mapping OWASP IoT Top 10 vulnerabilities. Automated scanning and remediation workflows for industrial IoT deployments.
+
+**Tech:** `IoT Security` `OWASP IoT Top 10` `FastAPI` `PostgreSQL`
+
+</td>
+<td width="50%">
+
+### ⚙️ [FlowSync](https://github.com/JayeshKakkad-Rotoclear/flow-sync)
+**ERP Workflow Automation Platform**
+
+Visual workflow builder connecting Salesforce, Monday.com, and manufacturing systems. Enables auditable automation with RBAC and retry logic.
+
+**Tech:** `ERP Integration` `React` `PostgreSQL` `RabbitMQ` `Docker`
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 📐 [System Design Studies](https://github.com/JayeshKakkad-Rotoclear/system-design-studies)
+**Architecture Case Studies**
+
+In-depth explorations of system design challenges: API gateways, rate limiting, distributed tracing, observability, and secure-by-design principles.
+
+**Tech:** `System Design` `Architecture` `Distributed Systems`
+
+</td>
+<td width="50%">
+
+### 💼 [Portfolio](https://github.com/JayeshKakkad-Rotoclear/portfolio)
+**Professional Portfolio Website**
+
+Premium multi-page portfolio with React, TypeScript, Material-UI, and Framer Motion. Focus on performance, accessibility, and security.
+
+**Tech:** `React` `TypeScript` `Material-UI` `Framer Motion` `Vite`
+
+</td>
+</tr>
+</table>
+
+<br>
+
+<div align="center">
+
+## 📊 GitHub Activity & Stats
+
+</div>
 
 <div align="center">
   <img alt="GitHub Metrics" src="./github-metrics.svg" width="100%">
+</div>
+
+<br>
+
+<div align="center">
+
+## 🎓 Mentoring & Teaching
+
+</div>
+
+<table>
+<tr>
+<td align="center">
+
+**Volunteer Instructor – [ReDI School of Digital Integration](https://www.redi-school.org/)**
+
+*March 2023 – Present*
+
+Teaching programming fundamentals (Python, JavaScript, web development) to students from underrepresented backgrounds. Providing one-on-one mentoring on career development, technical problem-solving, and navigating the tech industry.
+
+</td>
+</tr>
+</table>
+
+<br>
+
+<div align="center">
+
+## 📺 Content & Learning
+
+</div>
+
+<table>
+<tr>
+<td>
+
+**[YouTube: Cyberfolio Chronicles](https://www.youtube.com/@Cyberfolio_Chronicles)**
+
+Tutorials and demonstrations in cybersecurity, cloud security, and hands-on labs:
+
+- **[File Integrity Monitor with PowerShell](https://youtu.be/uDd5R2uEIL0)** – Building FIM from scratch
+- **[Cloud-based Home Lab with AWS](https://youtu.be/xh2xLN_uBlE)** – Setting up security lab infrastructure
+- **[Live RDP Brute Force Detection with Azure Sentinel](https://www.youtube.com/watch?v=yU_YuGYtJGU)** – SIEM & threat detection
+- **[Ransomware PoC (C#)](https://youtu.be/dab8pQ5UVjs)** – Understanding ransomware mechanics
+- **[Vulnerability Management with Nessus Essentials](https://youtu.be/mnjxUoBTyKs)** – Practical vulnerability scanning
+
+</td>
+</tr>
+</table>
+
+<br>
+
+<div align="center">
+
+## 💬 Let's Connect
+
+</div>
+
+<div align="center">
+
+Looking to collaborate on **embedded systems**, **platform architecture**, or **secure-by-design engineering**?
+
+**Reach out via:**
+
+[![Email](https://img.shields.io/badge/Email-contact%40jayesh--kakkad.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@jayesh-kakkad.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-jayesh--kakkad-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/jayesh-kakkad)
+[![Website](https://img.shields.io/badge/Website-jayesh--kakkad.com-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://jayesh-kakkad.com)
+[![YouTube](https://img.shields.io/badge/YouTube-Cyberfolio_Chronicles-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@Cyberfolio_Chronicles)
+
+</div>
+
+<br>
+
+<div align="center">
+  
+---
+
+*Building secure, scalable systems at the intersection of hardware and software*
+
 </div>
