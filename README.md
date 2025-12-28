@@ -4,9 +4,9 @@
 
 <div align="center">
   
-### 📍 Karlsruhe, Germany
+### Karlsruhe, Germany
 
-[![Website](https://img.shields.io/badge/🌐_Website-jayesh--kakkad.com-0A66C2?style=flat-square)](https://jayesh-kakkad.com)
+[![Website](https://img.shields.io/badge/_Website-jayesh--kakkad.com-0A66C2?style=flat-square)](https://jayesh-kakkad.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-jayesh--kakkad-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/jayesh-kakkad)
 [![Email](https://img.shields.io/badge/Email-contact%40jayesh--kakkad.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:contact@jayesh-kakkad.com)
 [![YouTube](https://img.shields.io/badge/YouTube-Cyberfolio_Chronicles-FF0000?style=flat-square&logo=youtube)](https://www.youtube.com/@Cyberfolio_Chronicles)
@@ -17,7 +17,7 @@
 
 <div align="center">
 
-## 💡 What I Do
+## What I Do
 
 </div>
 
@@ -61,7 +61,7 @@ software scale—from embedded Linux video pipelines to full-stack web platforms
 
 <div align="center">
 
-## 🎯 Core Domains
+## Core Domains
 
 </div>
 
@@ -112,7 +112,7 @@ Connecting disparate business systems (Salesforce, Monday.com) with resilient, a
 
 <div align="center">
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 </div>
 
@@ -170,7 +170,7 @@ Connecting disparate business systems (Salesforce, Monday.com) with resilient, a
 
 <div align="center">
 
-## 🚀 Featured Projects
+## Featured Projects
 
 </div>
 
@@ -178,7 +178,7 @@ Connecting disparate business systems (Salesforce, Monday.com) with resilient, a
 <tr>
 <td width="50%">
 
-### 🌐 [EdgeFleet](https://github.com/JayeshKakkad-Rotoclear/edgefleet)
+### [EdgeFleet](https://github.com/JayeshKakkad-Rotoclear/edgefleet)
 **Secure Edge Device Orchestration Platform**
 
 Multi-tenant platform for managing industrial IoT devices with real-time telemetry, remote configuration, OTA updates (RAUC), and secure command execution.
@@ -188,7 +188,7 @@ Multi-tenant platform for managing industrial IoT devices with real-time telemet
 </td>
 <td width="50%">
 
-### 🎥 [Video Pipeline Lab](https://github.com/JayeshKakkad-Rotoclear/video-pipeline-lab)
+### [Video Pipeline Lab](https://github.com/JayeshKakkad-Rotoclear/video-pipeline-lab)
 **V4L2/GStreamer Concepts Simulator**
 
 Educational platform for learning embedded video pipeline concepts without physical hardware. Interactive simulator with performance profiling.
@@ -200,7 +200,7 @@ Educational platform for learning embedded video pipeline concepts without physi
 <tr>
 <td width="50%">
 
-### 🔒 [SecureEdge](https://github.com/JayeshKakkad-Rotoclear/secure-edge)
+### [SecureEdge](https://github.com/JayeshKakkad-Rotoclear/secure-edge)
 **IoT Device Security Dashboard**
 
 Risk assessment platform mapping OWASP IoT Top 10 vulnerabilities. Automated scanning and remediation workflows for industrial IoT deployments.
@@ -210,7 +210,7 @@ Risk assessment platform mapping OWASP IoT Top 10 vulnerabilities. Automated sca
 </td>
 <td width="50%">
 
-### ⚙️ [FlowSync](https://github.com/JayeshKakkad-Rotoclear/flow-sync)
+### [FlowSync](https://github.com/JayeshKakkad-Rotoclear/flow-sync)
 **ERP Workflow Automation Platform**
 
 Visual workflow builder connecting Salesforce, Monday.com, and manufacturing systems. Enables auditable automation with RBAC and retry logic.
@@ -222,7 +222,7 @@ Visual workflow builder connecting Salesforce, Monday.com, and manufacturing sys
 <tr>
 <td width="50%">
 
-### 📐 [System Design Studies](https://github.com/JayeshKakkad-Rotoclear/system-design-studies)
+### [System Design Studies](https://github.com/JayeshKakkad-Rotoclear/system-design-studies)
 **Architecture Case Studies**
 
 In-depth explorations of system design challenges: API gateways, rate limiting, distributed tracing, observability, and secure-by-design principles.
@@ -232,7 +232,7 @@ In-depth explorations of system design challenges: API gateways, rate limiting, 
 </td>
 <td width="50%">
 
-### 💼 [Portfolio](https://github.com/JayeshKakkad-Rotoclear/portfolio)
+### [Portfolio](https://github.com/JayeshKakkad-Rotoclear/portfolio)
 **Professional Portfolio Website**
 
 Premium multi-page portfolio with React, TypeScript, Material-UI, and Framer Motion. Focus on performance, accessibility, and security.
@@ -247,7 +247,7 @@ Premium multi-page portfolio with React, TypeScript, Material-UI, and Framer Mot
 
 <div align="center">
 
-## 📊 GitHub Activity & Stats
+## GitHub Activity & Stats
 
 </div>
 
@@ -259,7 +259,7 @@ Premium multi-page portfolio with React, TypeScript, Material-UI, and Framer Mot
 
 <div align="center">
 
-## 🎓 Mentoring & Teaching
+## Mentoring & Teaching
 
 </div>
 
@@ -281,7 +281,7 @@ Teaching programming fundamentals (Python, JavaScript, web development) to stude
 
 <div align="center">
 
-## 📺 Content & Learning
+## Content & Learning
 
 </div>
 
@@ -307,7 +307,7 @@ Tutorials and demonstrations in cybersecurity, cloud security, and hands-on labs
 
 <div align="center">
 
-## 💬 Let's Connect
+## Let's Connect
 
 </div>
 
