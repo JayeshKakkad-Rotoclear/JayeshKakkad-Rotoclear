@@ -252,8 +252,24 @@ Premium multi-page portfolio with React, TypeScript, Material-UI, and Framer Mot
 </div>
 
 <div align="center">
-  <img alt="GitHub Metrics" src="./github-metrics.svg" width="100%">
+  
+![Metrics](github-metrics.svg)
+
 </div>
+
+<details>
+<summary>Additional Stats</summary>
+<br>
+
+<div align="center">
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=JayeshKakkad-Rotoclear&theme=tokyonight&hide_border=true)
+
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=JayeshKakkad-Rotoclear&theme=tokyo-night&hide_border=true&area=true)
+
+</div>
+
+</details>
 
 <br>
 
