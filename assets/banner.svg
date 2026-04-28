@@ -1,40 +1,201 @@
-<svg width="1200" height="300" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="320" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="60%" style="stop-color:#0f1d35"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
     </linearGradient>
-    <linearGradient id="accent-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#0f3460;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#533483;stop-opacity:1" />
+    <!-- Blue accent gradient -->
+    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a6ef5"/>
+      <stop offset="100%" style="stop-color:#5b9ef9"/>
     </linearGradient>
+    <!-- Purple accent -->
+    <linearGradient id="purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#533483"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <!-- Glow filter -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Isometric cube face colors -->
+    <linearGradient id="cube-top" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a6ef5;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#0f4bbb;stop-opacity:0.8"/>
+    </linearGradient>
+    <linearGradient id="cube-left" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a2d6e;stop-opacity:0.95"/>
+      <stop offset="100%" style="stop-color:#0d3d99;stop-opacity:0.9"/>
+    </linearGradient>
+    <linearGradient id="cube-right" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0c3585;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#0a2560;stop-opacity:0.85"/>
+    </linearGradient>
+    <!-- Animation definitions -->
+    <style>
+      .pulse-ring { animation: pulse 3s ease-in-out infinite; transform-origin: center; }
+      .pulse-ring-2 { animation: pulse 3s ease-in-out infinite 1s; transform-origin: center; }
+      .float-dot { animation: float 4s ease-in-out infinite; }
+      .float-dot-2 { animation: float 4s ease-in-out infinite 1.3s; }
+      .float-dot-3 { animation: float 4s ease-in-out infinite 2.6s; }
+      .scan-line { animation: scan 6s linear infinite; }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.15; transform: scale(1); }
+        50% { opacity: 0.35; transform: scale(1.05); }
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); opacity: 0.6; }
+        50% { transform: translateY(-8px); opacity: 1; }
+      }
+      @keyframes scan {
+        0% { transform: translateY(-20px); opacity: 0; }
+        10% { opacity: 0.3; }
+        90% { opacity: 0.3; }
+        100% { transform: translateY(340px); opacity: 0; }
+      }
+    </style>
   </defs>
-  
+
   <!-- Background -->
-  <rect width="1200" height="300" fill="url(#bg-gradient)"/>
-  
-  <!-- Geometric elements -->
-  <circle cx="100" cy="150" r="60" fill="none" stroke="url(#accent-gradient)" stroke-width="2" opacity="0.3"/>
-  <circle cx="100" cy="150" r="45" fill="none" stroke="url(#accent-gradient)" stroke-width="1.5" opacity="0.5"/>
-  <rect x="40" y="90" width="120" height="120" fill="none" stroke="url(#accent-gradient)" stroke-width="1" opacity="0.2"/>
-  
-  <!-- Right side geometric accents -->
-  <polygon points="1050,50 1100,100 1050,150" fill="none" stroke="url(#accent-gradient)" stroke-width="2" opacity="0.3"/>
-  <circle cx="1100" cy="200" r="30" fill="none" stroke="url(#accent-gradient)" stroke-width="1.5" opacity="0.4"/>
-  
-  <!-- Text content -->
-  <text x="220" y="120" font-family="'Segoe UI', 'Arial', sans-serif" font-size="48" font-weight="700" fill="#e8e8e8">
+  <rect width="1200" height="320" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern (perspective-like) -->
+  <g opacity="0.06" stroke="#3b7ef8" stroke-width="0.5">
+    <!-- Horizontal lines converging to right -->
+    <line x1="600" y1="320" x2="1200" y2="200"/>
+    <line x1="600" y1="320" x2="1200" y2="230"/>
+    <line x1="600" y1="320" x2="1200" y2="260"/>
+    <line x1="600" y1="320" x2="1200" y2="290"/>
+    <line x1="600" y1="320" x2="1200" y2="310"/>
+    <!-- Vertical lines fanning from center bottom -->
+    <line x1="600" y1="320" x2="700" y2="0"/>
+    <line x1="600" y1="320" x2="750" y2="0"/>
+    <line x1="600" y1="320" x2="800" y2="0"/>
+    <line x1="600" y1="320" x2="850" y2="0"/>
+    <line x1="600" y1="320" x2="900" y2="0"/>
+    <line x1="600" y1="320" x2="950" y2="0"/>
+    <line x1="600" y1="320" x2="1000" y2="0"/>
+    <line x1="600" y1="320" x2="1050" y2="0"/>
+    <line x1="600" y1="320" x2="1100" y2="0"/>
+    <line x1="600" y1="320" x2="1150" y2="0"/>
+    <line x1="600" y1="320" x2="1200" y2="0"/>
+  </g>
+
+  <!-- Scan line animation (subtle) -->
+  <rect class="scan-line" x="0" y="0" width="1200" height="1" fill="#3b7ef8" opacity="0.3"/>
+
+  <!-- === ISOMETRIC CUBES — right side decoration === -->
+  <g filter="url(#glow)">
+    <!-- Cube 1 (large, center-right) -->
+    <!-- Top face -->
+    <polygon points="980,100 1040,130 980,160 920,130" fill="url(#cube-top)" opacity="0.9"/>
+    <!-- Left face -->
+    <polygon points="920,130 980,160 980,220 920,190" fill="url(#cube-left)" opacity="0.95"/>
+    <!-- Right face -->
+    <polygon points="1040,130 980,160 980,220 1040,190" fill="url(#cube-right)" opacity="0.9"/>
+    <!-- Cube edges -->
+    <polygon points="980,100 1040,130 980,160 920,130" fill="none" stroke="#3b7ef8" stroke-width="0.8" opacity="0.6"/>
+    <polygon points="920,130 980,160 980,220 920,190" fill="none" stroke="#1a6ef5" stroke-width="0.8" opacity="0.4"/>
+    <polygon points="1040,130 980,160 980,220 1040,190" fill="none" stroke="#1a6ef5" stroke-width="0.8" opacity="0.4"/>
+
+    <!-- Cube 2 (small, upper right) -->
+    <polygon points="1070,60 1110,80 1070,100 1030,80" fill="url(#cube-top)" opacity="0.7"/>
+    <polygon points="1030,80 1070,100 1070,140 1030,120" fill="url(#cube-left)" opacity="0.7"/>
+    <polygon points="1110,80 1070,100 1070,140 1110,120" fill="url(#cube-right)" opacity="0.7"/>
+    <polygon points="1070,60 1110,80 1070,100 1030,80" fill="none" stroke="#3b7ef8" stroke-width="0.7" opacity="0.5"/>
+
+    <!-- Cube 3 (medium, lower right) -->
+    <polygon points="1090,190 1140,215 1090,240 1040,215" fill="url(#cube-top)" opacity="0.65"/>
+    <polygon points="1040,215 1090,240 1090,280 1040,255" fill="url(#cube-left)" opacity="0.65"/>
+    <polygon points="1140,215 1090,240 1090,280 1140,255" fill="url(#cube-right)" opacity="0.65"/>
+    <polygon points="1090,190 1140,215 1090,240 1040,215" fill="none" stroke="#3b7ef8" stroke-width="0.7" opacity="0.4"/>
+
+    <!-- Cube 4 (tiny, top far right) -->
+    <polygon points="1150,40 1180,55 1150,70 1120,55" fill="url(#cube-top)" opacity="0.5"/>
+    <polygon points="1120,55 1150,70 1150,100 1120,85" fill="url(#cube-left)" opacity="0.5"/>
+    <polygon points="1180,55 1150,70 1150,100 1180,85" fill="url(#cube-right)" opacity="0.5"/>
+  </g>
+
+  <!-- Glowing orb behind cubes -->
+  <circle cx="1050" cy="180" r="90" fill="#1a6ef5" opacity="0.04" filter="url(#softglow)"/>
+  <circle cx="1050" cy="180" r="50" fill="#3b7ef8" opacity="0.05" filter="url(#softglow)"/>
+
+  <!-- Pulse rings (animated) -->
+  <circle class="pulse-ring" cx="1050" cy="180" r="80" fill="none" stroke="#3b7ef8" stroke-width="1.5"/>
+  <circle class="pulse-ring-2" cx="1050" cy="180" r="110" fill="none" stroke="#3b7ef8" stroke-width="1"/>
+
+  <!-- Floating dots -->
+  <circle class="float-dot" cx="860" cy="80" r="3" fill="#3b7ef8" filter="url(#glow)"/>
+  <circle class="float-dot-2" cx="900" cy="260" r="2.5" fill="#5b9ef9" filter="url(#glow)"/>
+  <circle class="float-dot-3" cx="840" cy="190" r="2" fill="#7c3aed" filter="url(#glow)"/>
+  <circle class="float-dot" cx="920" cy="50" r="1.5" fill="#3b7ef8" opacity="0.7"/>
+  <circle class="float-dot-2" cx="780" cy="150" r="2" fill="#5b9ef9" opacity="0.5"/>
+
+  <!-- Left decorative circles (subtle) -->
+  <circle cx="80" cy="160" r="70" fill="none" stroke="#3b7ef8" stroke-width="1.5" opacity="0.15"/>
+  <circle cx="80" cy="160" r="50" fill="none" stroke="#1a6ef5" stroke-width="1" opacity="0.2"/>
+  <circle cx="80" cy="160" r="30" fill="none" stroke="#3b7ef8" stroke-width="0.8" opacity="0.25"/>
+  <circle cx="80" cy="160" r="5" fill="#3b7ef8" opacity="0.6" filter="url(#glow)"/>
+
+  <!-- Circuit trace accents (left side) -->
+  <g stroke="#3b7ef8" stroke-width="1" fill="none" opacity="0.2">
+    <polyline points="30,100 60,100 70,110 70,140"/>
+    <circle cx="70" cy="140" r="3" fill="#3b7ef8" opacity="0.5"/>
+    <polyline points="130,200 160,200 170,190 170,160"/>
+    <circle cx="170" cy="160" r="3" fill="#3b7ef8" opacity="0.5"/>
+  </g>
+
+  <!-- === MAIN TEXT === -->
+  <!-- Name -->
+  <text x="200" y="115" font-family="'Segoe UI', 'SF Pro Display', 'Arial', sans-serif"
+        font-size="62" font-weight="700" fill="#ffffff" letter-spacing="-1">
     Jayesh Kakkad
   </text>
-  
-  <text x="220" y="165" font-family="'Segoe UI', 'Arial', sans-serif" font-size="24" font-weight="400" fill="#94a3b8">
+
+  <!-- Blue accent line -->
+  <rect x="200" y="128" width="340" height="3" fill="url(#blue)" rx="2" opacity="0.9" filter="url(#glow)"/>
+
+  <!-- Role title -->
+  <text x="200" y="168" font-family="'Segoe UI', 'SF Pro Text', 'Arial', sans-serif"
+        font-size="22" font-weight="400" fill="#94a3b8" letter-spacing="0.3">
     Software Architect &amp; Embedded Systems Engineer
   </text>
-  
-  <text x="220" y="200" font-family="'Segoe UI', 'Arial', sans-serif" font-size="16" font-weight="300" fill="#64748b">
-    Building secure, scalable platforms for industrial IoT and embedded edge systems
+
+  <!-- Tagline -->
+  <text x="200" y="205" font-family="'Segoe UI', 'SF Pro Text', 'Arial', sans-serif"
+        font-size="15" font-weight="300" fill="#4a5568" letter-spacing="0.5">
+    Building secure, scalable platforms where hardware meets software
   </text>
-  
-  <!-- Subtle line accent -->
-  <line x1="220" y1="140" x2="520" y2="140" stroke="url(#accent-gradient)" stroke-width="2" opacity="0.6"/>
+
+  <!-- Pill badges row -->
+  <g font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="500">
+    <!-- Industrial IoT -->
+    <rect x="200" y="230" width="108" height="26" rx="13" fill="#1a6ef5" opacity="0.2"/>
+    <rect x="200" y="230" width="108" height="26" rx="13" fill="none" stroke="#3b7ef8" stroke-width="1" opacity="0.6"/>
+    <text x="254" y="247" fill="#5b9ef9" text-anchor="middle">Industrial IoT</text>
+    <!-- Embedded Linux -->
+    <rect x="318" y="230" width="126" height="26" rx="13" fill="#7c3aed" opacity="0.15"/>
+    <rect x="318" y="230" width="126" height="26" rx="13" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.5"/>
+    <text x="381" y="247" fill="#a78bfa" text-anchor="middle">Embedded Linux</text>
+    <!-- Security -->
+    <rect x="454" y="230" width="90" height="26" rx="13" fill="#059669" opacity="0.15"/>
+    <rect x="454" y="230" width="90" height="26" rx="13" fill="none" stroke="#059669" stroke-width="1" opacity="0.5"/>
+    <text x="499" y="247" fill="#34d399" text-anchor="middle">Security</text>
+    <!-- Full-Stack -->
+    <rect x="554" y="230" width="86" height="26" rx="13" fill="#d97706" opacity="0.15"/>
+    <rect x="554" y="230" width="86" height="26" rx="13" fill="none" stroke="#d97706" stroke-width="1" opacity="0.5"/>
+    <text x="597" y="247" fill="#fbbf24" text-anchor="middle">Full-Stack</text>
+  </g>
+
+  <!-- Location pill -->
+  <text x="200" y="290" font-family="'Segoe UI', Arial, sans-serif" font-size="13"
+        fill="#4a5568" font-weight="400">📍 Karlsruhe, Germany</text>
 </svg>
+
