@@ -1,8 +1,8 @@
-![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=14,20,24,30&height=280&section=header&text=Jayesh%20Kakkad&fontSize=80&fontAlignY=40&fontColor=ffffff&desc=Software%20Architect%20%26%20Embedded%20Systems%20Engineer&descSize=22&descAlignY=62&descAlign=50&animation=fadeIn)
+![Header](assets/banner.svg)
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=800&color=3B7EF8&center=true&vCenter=true&width=620&lines=Industrial+IoT+Platform+Architect;Embedded+Linux+%2F+V4L2+%2F+GStreamer+Expert;Full-Stack+%28SvelteKit+%2B+FastAPI+%2B+PostgreSQL%29;OWASP+Security+%26+Penetration+Testing;Building+where+hardware+meets+software" alt="Typing SVG" />
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=800&color=3B7EF8&center=true&vCenter=true&width=620&lines=Industrial+IoT+Platform+Architect;Embedded+Linux+%2F+V4L2+%2F+GStreamer+Expert;Full-Stack+%28SvelteKit+%2B+FastAPI+%2B+PostgreSQL%29;OWASP+Security+%26+Penetration+Testing;Building+where+hardware+meets+software)
 
 <br/>
 
@@ -50,11 +50,11 @@ Teaching Cybersecurity as volunteer instructor at [ReDI School of Digital Integr
 </td>
 <td valign="top" width="42%" align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=JayeshKakkad-Rotoclear&theme=tokyonight&show_icons=true&hide_border=true&hide_title=true&rank_icon=github" width="100%"/>
+<img src="https://github-readme-stats.vercel.app/api?username=JayeshKakkad-Rotoclear&amp;theme=tokyonight&amp;show_icons=true&amp;hide_border=true&amp;hide_title=true&amp;rank_icon=github" width="100%"/>
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=JayeshKakkad-Rotoclear&theme=tokyonight&hide_border=true" width="100%"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=JayeshKakkad-Rotoclear&amp;theme=tokyonight&amp;hide_border=true" width="100%"/>
 
 </td>
 </tr>
@@ -158,11 +158,7 @@ Teaching Cybersecurity as volunteer instructor at [ReDI School of Digital Integr
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JayeshKakkad-Rotoclear&theme=tokyonight&hide_border=true&layout=compact&langs_count=8" height="180"/>
-
-<br/><br/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=JayeshKakkad-Rotoclear&theme=tokyonight&hide_border=true" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=JayeshKakkad-Rotoclear&amp;theme=tokyonight&amp;hide_border=true" />
 
 </div>
 
@@ -172,7 +168,7 @@ Teaching Cybersecurity as volunteer instructor at [ReDI School of Digital Integr
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=JayeshKakkad-Rotoclear&theme=react-dark&hide_border=true&area=true&area_color=1a6ef5&color=3b7ef8&line=3b7ef8&point=ffffff" width="100%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=JayeshKakkad-Rotoclear&amp;theme=react-dark&amp;hide_border=true&amp;area=true&amp;area_color=1a6ef5&amp;color=3b7ef8&amp;line=3b7ef8&amp;point=ffffff" width="100%"/>
 
 </div>
 
