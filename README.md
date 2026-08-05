@@ -9,7 +9,7 @@
 [![Profile Views](https://komarev.com/ghpvc/?username=JayeshKakkad-Rotoclear&style=for-the-badge&color=3b7ef8&label=PROFILE+VIEWS)](https://github.com/JayeshKakkad-Rotoclear)
 [![Website](https://img.shields.io/badge/Website-jayesh--kakkad.de-0A66C2?style=for-the-badge&logo=About.me&logoColor=white)](https://jayesh-kakkad.de)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/jayesh-kakkad)
-[![Email](https://img.shields.io/badge/Email-contact%40jayesh--kakkad.de-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@jayesh-kakkad.de)
+[![Email](https://img.shields.io/badge/Email-contact%40jayesh--kakkad.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@jayesh-kakkad.com)
 
 Karlsruhe, Germany
 
