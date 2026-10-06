@@ -42,7 +42,7 @@ This guide will help you set up the GitHub metrics workflow to include **all pri
 1. Go to **Actions** tab in your repository
 2. Click **"GitHub Metrics"** workflow on the left
 3. Click **"Run workflow"** → **"Run workflow"** (green button)
-4. Wait 1-2 minutes for it to complete
+4. Wait for token validation and metrics generation to complete (generation can take several minutes)
 5. You should see a new commit with `github-metrics.svg`
 
 ## Step 5: Verify
@@ -63,6 +63,16 @@ The workflow runs:
 - Manually via Actions tab
 
 ## Troubleshooting
+
+**Workflow fails with "Bad credentials" or "GitHub rejected METRICS_TOKEN":**
+- Run [37508718122](https://github.com/JayeshKakkad-Rotoclear/JayeshKakkad-Rotoclear/actions/runs/37508718122) failed because GitHub rejected the metrics token, before metrics could be computed.
+- Generate a replacement personal access token using Step 1, then update the existing `METRICS_TOKEN` under [repository Actions secrets](https://github.com/JayeshKakkad-Rotoclear/JayeshKakkad-Rotoclear/settings/secrets/actions).
+- Run the workflow again using Step 4. The `Validate Metrics token` step must pass before metrics generation starts.
+- The validation checks authentication only; the token still needs the scopes and organization access described above to include private repositories.
+- Changing workflow permissions or rerunning with the same invalid token will not repair this error.
+
+**Workflow fails with "METRICS_TOKEN is missing":**
+- Add the repository secret using Step 2. Never put the token in the workflow file or logs.
 
 **Workflow fails with "Resource not accessible by integration":**
 - Check Step 3 - ensure workflow permissions are set to "Read and write"

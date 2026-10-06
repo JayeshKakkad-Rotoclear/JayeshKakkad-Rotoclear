@@ -13,7 +13,39 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - name: Validate Metrics token
+        shell: bash
+        env:
+          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: |
+          if [[ -z "$METRICS_TOKEN" ]]; then
+            echo "::error::METRICS_TOKEN is missing. Add a personal access token in Settings > Secrets and variables > Actions. See METRICS_SETUP.md."
+            exit 1
+          fi
+
+          if ! status=$(curl --silent --show-error --output /dev/null --write-out '%{http_code}' \
+            --connect-timeout 10 --max-time 30 \
+            --header "Authorization: Bearer $METRICS_TOKEN" \
+            --header "Accept: application/vnd.github+json" \
+            "${GITHUB_API_URL}/user"); then
+            echo "::error::Could not reach GitHub to validate METRICS_TOKEN. Retry the workflow."
+            exit 1
+          fi
+
+          case "$status" in
+            200) echo "METRICS_TOKEN authenticated successfully." ;;
+            401)
+              echo "::error::GitHub rejected METRICS_TOKEN (Bad credentials). Replace the expired, revoked, or invalid repository secret and rerun. See METRICS_SETUP.md."
+              exit 1
+              ;;
+            *)
+              echo "::error::GitHub token validation returned HTTP $status. Check API availability, rate limits, and token access before retrying."
+              exit 1
+              ;;
+          esac
+
+      - name: Generate GitHub Metrics
+        uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: JayeshKakkad-Rotoclear
