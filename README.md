@@ -1,8 +1,7 @@
 **English** · [Deutsch](README.de.md)
 
 <p>
-  <img src="assets/practice-banner-en-light.svg#gh-light-mode-only" width="600" alt="Jayesh Kakkad — From physical systems to useful software.">
-  <img src="assets/practice-banner-en-dark.svg#gh-dark-mode-only" width="600" alt="Jayesh Kakkad — From physical systems to useful software.">
+  <img src="assets/practice-banner-en.svg" width="600" alt="Jayesh Kakkad — From physical systems to useful software.">
 </p>
 
 I connect embedded engineering, software platforms and the workflows around them. My work spans industrial camera systems, production planning and independent technical experiments.
@@ -12,8 +11,7 @@ I connect embedded engineering, software platforms and the workflows around them
 ## Where my work connects
 
 <p>
-  <img src="assets/practice-map-en-light.svg#gh-light-mode-only" width="600" alt="Physical systems ↔ software platforms ↔ operational workflows. Security and maintainability connect all three layers.">
-  <img src="assets/practice-map-en-dark.svg#gh-dark-mode-only" width="600" alt="Physical systems ↔ software platforms ↔ operational workflows. Security and maintainability connect all three layers.">
+  <img src="assets/practice-map-en.svg" width="600" alt="Physical systems ↔ software platforms ↔ operational workflows. Security and maintainability connect all three layers.">
 </p>
 
 I am interested in the connections: how a device becomes part of a platform, how information reaches the right person, and how software fits into everyday operations.
