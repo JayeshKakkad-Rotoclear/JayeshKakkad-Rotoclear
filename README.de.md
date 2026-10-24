@@ -1,64 +1,99 @@
 [English](README.md) · **Deutsch**
 
-<p>
-  <img src="assets/practice-banner-de.svg" width="600" alt="Jayesh Kakkad — Von realen Systemen zu guter Software.">
-</p>
+![Jayesh Kakkad — Softwarearchitekt und Embedded-Entwickler](assets/banner-de.svg)
 
-Ich verbinde Embedded-Entwicklung, Softwareplattformen und die Prozesse dahinter. Meine Arbeit reicht von industriellen Kamerasystemen über Produktionsplanung bis zu eigenen technischen Experimenten.
+**Sichere, skalierbare Plattformen an der Schnittstelle zwischen Embedded-Hardware und moderner Software.**
 
-[Portfolio ↗](https://www.jayesh-kakkad.de/de/) · [E-Mail ↗](mailto:contact@jayesh-kakkad.com) · [LinkedIn ↗](https://www.linkedin.com/in/jayesh-kakkad)
+[Portfolio ↗](https://www.jayesh-kakkad.de/de/) · [LinkedIn ↗](https://www.linkedin.com/in/jayesh-kakkad) · [E-Mail ↗](mailto:contact@jayesh-kakkad.com)
 
-## Was meine Arbeit verbindet
+[Über mich](#über-mich) · [Entwicklung](#was-ich-entwickle) · [Werkzeuge](#technologien) · [Lehre](#mentoring--lehre)
 
-<p>
-  <img src="assets/practice-map-de.svg" width="600" alt="Physische Systeme ↔ Softwareplattformen ↔ betriebliche Abläufe. Sicherheit und Wartbarkeit verbinden alle drei Ebenen.">
-</p>
+## Über mich
 
-Mich interessieren die Verbindungen: wie ein Gerät Teil einer Plattform wird, wie Informationen die richtigen Menschen erreichen und wie Software in den Arbeitsalltag passt.
+Ich arbeite an Embedded-Firmware, Backend-Systemen und industriellen Kameraplattformen. Dabei betrachte ich den gesamten Weg vom Gerät und seinen Daten bis zur nützlichen, wartbaren Software.
+
+Neben meiner Entwicklungsarbeit unterrichte ich ehrenamtlich an der [ReDI School of Digital Integration](https://www.redi-school.org/) und vermittle praktische Kenntnisse in Programmierung und Cybersicherheit.
+
+**Themen für einen Austausch:** V4L2- und GStreamer-Pipelines, SvelteKit, IoT-Sicherheit und Systemarchitektur.
+
+## Was ich entwickle
+
+### 01 / Plattformarchitektur
+Sichere industrielle IoT-Plattformen, die Orchestrierung von Edge-Geräten, verteilte Dienste und die Integration betrieblicher Abläufe.
+
+### 02 / Embedded-Entwicklung
+Embedded Linux mit Yocto und PTXdist, Videopipelines mit V4L2 und GStreamer sowie Software für ZynqMP- und ARM-Plattformen.
+
+### 03 / Full-Stack-Entwicklung
+Oberflächen mit SvelteKit, React und TypeScript; APIs und Datenhaltung mit FastAPI, Node.js, PostgreSQL und Prisma. Selbst gehostete Bereitstellung mit Docker.
+
+### 04 / Security Engineering
+Bedrohungsmodellierung, sichere Entwicklung und praktische Sicherheitstests. Zu meinen Werkzeugen gehören Burp Suite, Nessus, Wireshark und die Kali-Toolchain.
+
+## Technologien
+
+**Programmiersprachen**
+
+![Programmiersprachen](https://skillicons.dev/icons?i=c,cpp,python,ts,js,nim&perline=3)
+
+**Frontend & Backend**
+
+![Frontend & Backend](https://skillicons.dev/icons?i=svelte,react,tailwind,nodejs,fastapi,prisma&perline=3)
+
+**Daten & Infrastruktur**
+
+![Daten & Infrastruktur](https://skillicons.dev/icons?i=postgres,supabase,docker,linux,git,vscode&perline=3)
 
 <details>
-<summary>Die Ebenen im Detail</summary>
+<summary>Werkzeuge für Embedded-Entwicklung und Sicherheit</summary>
 
-- **Physische Systeme:** Geräte, Signale und Embedded Linux.
-- **Softwareplattformen:** Oberflächen, APIs und Daten.
-- **Betriebliche Abläufe:** Menschen, Prozesse und Automatisierung.
+**Embedded:** Embedded Linux · Yocto · PTXdist · V4L2 · GStreamer · C / C++
 
-Sicherheit und Wartbarkeit gehören für mich zu jeder Ebene.
+**Sicherheit:** OWASP Top 10 · OWASP IoT Top 10 · Bedrohungsmodellierung · Burp Suite · Nessus · Wireshark
 
 </details>
 
-## Auf eigene Weise entdecken
+## Meine Arbeit entdecken
 
-Der Projektkatalog bietet Kontext; die Repositories zeigen Code und Dokumentation.
+Die vollständige Sammlung: Projektkontext auf meiner Website, Quellcode auf GitHub.
 
-[Projektkatalog ↗](https://www.jayesh-kakkad.de/de/projects/) · [Repositories entdecken ↗](https://github.com/JayeshKakkad-Rotoclear?tab=repositories)
-
-## Wie ich arbeite
-
-Den tatsächlichen Ablauf verstehen. Systemgrenzen klären. Wartbare Lösungen entwickeln. Entscheidungen erklären.
+[Zum Projektkatalog ↗](https://www.jayesh-kakkad.de/de/projects/) · [Repositories entdecken ↗](https://github.com/JayeshKakkad-Rotoclear?tab=repositories)
 
 <details>
-<summary>Technische Werkzeuge</summary>
+<summary>GitHub-Aktivität und Statistiken</summary>
 
-- **Embedded:** C/C++, Embedded Linux, V4L2 und GStreamer.
-- **Plattformen:** TypeScript, Svelte, Python und PostgreSQL.
-- **Integration und Betrieb:** Docker, APIs und sichere Systemarchitektur.
+![GitHub-Aktivität und Statistiken](github-metrics.svg)
 
 </details>
 
+## Mentoring & Lehre
+
+**Ehrenamtlicher Dozent · [ReDI School of Digital Integration](https://www.redi-school.org/)**
+
+Grundlagen der Programmierung, Cybersicherheit und praktische technische Problemlösung. Ich möchte komplexe Themen verständlich machen und Lernende dabei unterstützen, durch eigene Erfahrungen sicherer zu werden.
+
+## Inhalte & Lernen
+
+[**Cyberfolio Chronicles ↗**](https://www.youtube.com/@Cyberfolio_Chronicles) — praktische Übungen zu Cybersicherheit, Cloud-Sicherheit und Embedded Systems.
+
 <details>
-<summary>Lehre und Experimente</summary>
+<summary>Tutorials und Übungen entdecken (Englisch)</summary>
 
-Ich unterrichte ehrenamtlich an der [ReDI School of Digital Integration](https://www.redi-school.org/). Auf [Cyberfolio Chronicles](https://www.youtube.com/@Cyberfolio_Chronicles) teile ich praktische Lerninhalte rund um IT-Sicherheit.
+| Video | Thema |
+|-------|-------|
+| [File Integrity Monitor with PowerShell](https://youtu.be/uDd5R2uEIL0) | Dateiintegrität selbst überwachen |
+| [Cloud-based Home Lab with AWS](https://youtu.be/xh2xLN_uBlE) | Infrastruktur für ein Sicherheitslabor |
+| [Live RDP Brute Force Detection — Azure Sentinel](https://www.youtube.com/watch?v=yU_YuGYtJGU) | SIEM und Bedrohungserkennung |
+| [Ransomware PoC (C#)](https://youtu.be/dab8pQ5UVjs) | Funktionsweise von Ransomware verstehen |
+| [Vulnerability Management with Nessus Essentials](https://youtu.be/mnjxUoBTyKs) | Praktische Schwachstellenanalyse |
 
-Wissen weiterzugeben ist für mich Teil guter technischer Arbeit.
 
 </details>
 
 ---
 
-### Ein System, das besser werden kann?
+### Kontakt
 
-Ich freue mich auf den Austausch über Embedded Systems, Softwarearchitektur und digitale Prozesse.
+Interesse an Embedded Systems, Plattformarchitektur oder sicherer Entwicklung? Ich freue mich auf den Austausch.
 
-[contact@jayesh-kakkad.com ↗](mailto:contact@jayesh-kakkad.com)
+[contact@jayesh-kakkad.com](mailto:contact@jayesh-kakkad.com) · [LinkedIn](https://www.linkedin.com/in/jayesh-kakkad) · [Website](https://www.jayesh-kakkad.de/de/)

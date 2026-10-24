@@ -1,5 +1,3 @@
-> Legacy reference: this document does not drive the current profile. See [profile maintenance](PROFILE_MAINTENANCE.md). The profile intentionally has no selected-project section or metrics cards.
-
 # Featured Projects - Maintenance Reference
 
 This file provides extended project descriptions for easy updates to the main README.md.

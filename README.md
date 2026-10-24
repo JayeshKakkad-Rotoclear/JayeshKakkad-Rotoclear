@@ -1,64 +1,99 @@
 **English** · [Deutsch](README.de.md)
 
-<p>
-  <img src="assets/practice-banner-en.svg" width="600" alt="Jayesh Kakkad — From physical systems to useful software.">
-</p>
+![Jayesh Kakkad — Software Architect & Embedded Systems Engineer](assets/banner.svg)
 
-I connect embedded engineering, software platforms and the workflows around them. My work spans industrial camera systems, production planning and independent technical experiments.
+**Building secure, scalable platforms where embedded hardware meets modern software.**
 
-[Portfolio ↗](https://www.jayesh-kakkad.de/en/) · [Email ↗](mailto:contact@jayesh-kakkad.com) · [LinkedIn ↗](https://www.linkedin.com/in/jayesh-kakkad)
+[Portfolio ↗](https://www.jayesh-kakkad.de) · [LinkedIn ↗](https://www.linkedin.com/in/jayesh-kakkad) · [Email ↗](mailto:contact@jayesh-kakkad.com)
 
-## Where my work connects
+[About](#about-me) · [Engineering](#what-i-build) · [Toolkit](#tech-stack) · [Teaching](#mentoring--teaching)
 
-<p>
-  <img src="assets/practice-map-en.svg" width="600" alt="Physical systems ↔ software platforms ↔ operational workflows. Security and maintainability connect all three layers.">
-</p>
+## About Me
 
-I am interested in the connections: how a device becomes part of a platform, how information reaches the right person, and how software fits into everyday operations.
+I work across embedded firmware, backend systems and industrial camera platforms. My focus is the complete path from a device and its data to useful, maintainable software.
+
+Alongside engineering, I volunteer as an instructor at [ReDI School of Digital Integration](https://www.redi-school.org/), sharing practical knowledge in programming and cybersecurity.
+
+**Ask me about:** V4L2 and GStreamer pipelines, SvelteKit, IoT security and system design.
+
+## What I Build
+
+### 01 / Platform Architecture
+Secure industrial IoT platforms, edge device orchestration, distributed services and workflow integrations.
+
+### 02 / Embedded Engineering
+Embedded Linux with Yocto and PTXdist, V4L2 and GStreamer video pipelines, and software for ZynqMP and ARM platforms.
+
+### 03 / Full-Stack Development
+Interfaces built with SvelteKit, React and TypeScript; APIs and data layers with FastAPI, Node.js, PostgreSQL and Prisma. Self-hosted deployment with Docker.
+
+### 04 / Security Engineering
+Threat modeling, secure development and practical security testing. Tools include Burp Suite, Nessus, Wireshark and the Kali toolchain.
+
+## Tech Stack
+
+**Languages**
+
+![Languages](https://skillicons.dev/icons?i=c,cpp,python,ts,js,nim&perline=3)
+
+**Frontend & Backend**
+
+![Frontend & Backend](https://skillicons.dev/icons?i=svelte,react,tailwind,nodejs,fastapi,prisma&perline=3)
+
+**Data & Infrastructure**
+
+![Data & Infrastructure](https://skillicons.dev/icons?i=postgres,supabase,docker,linux,git,vscode&perline=3)
 
 <details>
-<summary>The layers in detail</summary>
+<summary>Embedded and security toolkit</summary>
 
-- **Physical systems:** devices, signals and embedded Linux.
-- **Software platforms:** interfaces, APIs and data.
-- **Operational workflows:** people, processes and automation.
+**Embedded:** Embedded Linux · Yocto · PTXdist · V4L2 · GStreamer · C / C++
 
-Security and maintainability belong at every layer.
+**Security:** OWASP Top 10 · OWASP IoT Top 10 · Threat modeling · Burp Suite · Nessus · Wireshark
 
 </details>
 
-## Explore at your own pace
+## Explore My Work
 
-Browse the project catalogue for context, or explore the repositories for code and documentation.
+Browse the complete collection, with project context on my website and source code in GitHub.
 
-[Project catalogue ↗](https://www.jayesh-kakkad.de/en/projects/) · [Browse repositories ↗](https://github.com/JayeshKakkad-Rotoclear?tab=repositories)
-
-## How I work
-
-Understand the real workflow. Make system boundaries explicit. Build something maintainable. Explain the decisions.
+[View project catalogue ↗](https://www.jayesh-kakkad.de/projects/) · [Browse repositories ↗](https://github.com/JayeshKakkad-Rotoclear?tab=repositories)
 
 <details>
-<summary>Technical toolkit</summary>
+<summary>GitHub activity and statistics</summary>
 
-- **Embedded:** C/C++, embedded Linux, V4L2 and GStreamer.
-- **Platforms:** TypeScript, Svelte, Python and PostgreSQL.
-- **Integration and operations:** Docker, APIs and secure-by-design architecture.
+![GitHub activity and statistics](github-metrics.svg)
 
 </details>
 
+## Mentoring & Teaching
+
+**Volunteer Instructor · [ReDI School of Digital Integration](https://www.redi-school.org/)**
+
+Programming fundamentals, cybersecurity and hands-on technical problem-solving. I enjoy making complex topics approachable and helping learners develop confidence through practice.
+
+## Content & Learning
+
+[**Cyberfolio Chronicles ↗**](https://www.youtube.com/@Cyberfolio_Chronicles) — hands-on labs in cybersecurity, cloud security and embedded systems.
+
 <details>
-<summary>Teaching and explorations</summary>
+<summary>Browse tutorials and labs</summary>
 
-I volunteer as an instructor at [ReDI School of Digital Integration](https://www.redi-school.org/). Through [Cyberfolio Chronicles](https://www.youtube.com/@Cyberfolio_Chronicles), I share hands-on security learning.
+| Video | Topic |
+|-------|-------|
+| [File Integrity Monitor with PowerShell](https://youtu.be/uDd5R2uEIL0) | Building FIM from scratch |
+| [Cloud-based Home Lab with AWS](https://youtu.be/xh2xLN_uBlE) | Security lab infrastructure |
+| [Live RDP Brute Force Detection — Azure Sentinel](https://www.youtube.com/watch?v=yU_YuGYtJGU) | SIEM &amp; threat detection |
+| [Ransomware PoC (C#)](https://youtu.be/dab8pQ5UVjs) | Understanding ransomware mechanics |
+| [Vulnerability Management with Nessus Essentials](https://youtu.be/mnjxUoBTyKs) | Practical vulnerability scanning |
 
-Sharing knowledge is part of how I practise engineering.
 
 </details>
 
 ---
 
-### Have a system worth making better?
+### Let's Connect
 
-Let's talk about embedded systems, software architecture and digital operations.
+Interested in embedded systems, platform architecture or secure engineering? Let's talk.
 
-[contact@jayesh-kakkad.com ↗](mailto:contact@jayesh-kakkad.com)
+[contact@jayesh-kakkad.com](mailto:contact@jayesh-kakkad.com) · [LinkedIn](https://www.linkedin.com/in/jayesh-kakkad) · [Website](https://www.jayesh-kakkad.de)
