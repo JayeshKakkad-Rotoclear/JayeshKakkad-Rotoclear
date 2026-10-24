@@ -1,3 +1,5 @@
+> Legacy reference: this document does not drive the current profile. See [profile maintenance](PROFILE_MAINTENANCE.md). The profile intentionally has no selected-project section or metrics cards.
+
 # GitHub Metrics Setup Guide
 
 This guide will help you set up the GitHub metrics workflow to include **all private repositories** from your personal account and all organizations.
