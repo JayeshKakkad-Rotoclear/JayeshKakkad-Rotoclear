@@ -1,10 +1,9 @@
 [English](README.md) · **Deutsch**
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/practice-banner-de-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/practice-banner-de-light.svg">
-  <img src="assets/practice-banner-de-light.svg" width="600" alt="Jayesh Kakkad — Von realen Systemen zu guter Software.">
-</picture>
+<p>
+  <img src="assets/practice-banner-de-light.svg#gh-light-mode-only" width="600" alt="Jayesh Kakkad — Von realen Systemen zu guter Software.">
+  <img src="assets/practice-banner-de-dark.svg#gh-dark-mode-only" width="600" alt="Jayesh Kakkad — Von realen Systemen zu guter Software.">
+</p>
 
 Ich verbinde Embedded-Entwicklung, Softwareplattformen und die Prozesse dahinter. Meine Arbeit reicht von industriellen Kamerasystemen über Produktionsplanung bis zu eigenen technischen Experimenten.
 
@@ -12,11 +11,10 @@ Ich verbinde Embedded-Entwicklung, Softwareplattformen und die Prozesse dahinter
 
 ## Was meine Arbeit verbindet
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/practice-map-de-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/practice-map-de-light.svg">
-  <img src="assets/practice-map-de-light.svg" width="600" alt="Physische Systeme ↔ Softwareplattformen ↔ betriebliche Abläufe. Sicherheit und Wartbarkeit verbinden alle drei Ebenen.">
-</picture>
+<p>
+  <img src="assets/practice-map-de-light.svg#gh-light-mode-only" width="600" alt="Physische Systeme ↔ Softwareplattformen ↔ betriebliche Abläufe. Sicherheit und Wartbarkeit verbinden alle drei Ebenen.">
+  <img src="assets/practice-map-de-dark.svg#gh-dark-mode-only" width="600" alt="Physische Systeme ↔ Softwareplattformen ↔ betriebliche Abläufe. Sicherheit und Wartbarkeit verbinden alle drei Ebenen.">
+</p>
 
 Mich interessieren die Verbindungen: wie ein Gerät Teil einer Plattform wird, wie Informationen die richtigen Menschen erreichen und wie Software in den Arbeitsalltag passt.
 
