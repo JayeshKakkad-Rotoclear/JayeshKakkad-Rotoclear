@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="360" viewBox="0 0 840 360" role="img" aria-label="GITHUB-AKTIVITÄT: Beiträge 374, Commits 373, Aktive Tage 54, Repositories 23; Häufigste Sprachen: Svelte 52%, TypeScript 16%, Python 12%, JavaScript 8%, Kotlin 8%, Andere 4%">
-<title>GITHUB-AKTIVITÄT: Beiträge 374, Commits 373, Aktive Tage 54, Repositories 23; Häufigste Sprachen: Svelte 52%, TypeScript 16%, Python 12%, JavaScript 8%, Kotlin 8%, Andere 4%</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="360" viewBox="0 0 840 360" role="img" aria-label="GITHUB-AKTIVITÄT: Beiträge 377, Commits 333, Aktive Tage 54, Repositories 23; Häufigste Sprachen: Svelte 52%, TypeScript 16%, Python 12%, JavaScript 8%, Kotlin 8%, Andere 4%">
+<title>GITHUB-AKTIVITÄT: Beiträge 377, Commits 333, Aktive Tage 54, Repositories 23; Häufigste Sprachen: Svelte 52%, TypeScript 16%, Python 12%, JavaScript 8%, Kotlin 8%, Andere 4%</title>
 <defs>
 <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0) scale(560 300)"><stop stop-color="rgba(129,140,248,0.16)"/><stop offset="1" stop-color="rgba(129,140,248,0.16)" stop-opacity="0"/></radialGradient>
 </defs>
@@ -9,10 +9,10 @@
 <circle cx="32" cy="38" r="4" fill="#818cf8"/><text x="44" y="42" font-size="12" font-weight="700" fill="#8b95a9" letter-spacing="1.3">LETZTE 12 MONATE</text>
 <text x="812" y="42" font-size="12" font-weight="400" fill="#5d677b" text-anchor="end">Stand 31. Okt. 2026</text>
 <rect x="24" y="60" width="189" height="84" rx="12" fill="#171f30"/>
-<text x="42" y="104" font-size="28" font-weight="700" fill="#818cf8" letter-spacing="-0.5">374</text>
+<text x="42" y="104" font-size="28" font-weight="700" fill="#818cf8" letter-spacing="-0.5">377</text>
 <text x="42" y="128" font-size="12.5" font-weight="400" fill="#8b95a9">Beiträge</text>
 <rect x="225" y="60" width="189" height="84" rx="12" fill="#171f30"/>
-<text x="243" y="104" font-size="28" font-weight="700" fill="#e8ecf4" letter-spacing="-0.5">373</text>
+<text x="243" y="104" font-size="28" font-weight="700" fill="#e8ecf4" letter-spacing="-0.5">333</text>
 <text x="243" y="128" font-size="12.5" font-weight="400" fill="#8b95a9">Commits</text>
 <rect x="426" y="60" width="189" height="84" rx="12" fill="#171f30"/>
 <text x="444" y="104" font-size="28" font-weight="700" fill="#e8ecf4" letter-spacing="-0.5">54</text>
@@ -26,41 +26,41 @@
 <text x="60.75" y="314" font-size="11" font-weight="500" fill="#5d677b" text-anchor="middle">Nov</text>
 <rect x="84.5" y="287.6" width="27.5" height="6.4" rx="4" fill="#818cf8" opacity="0.6"/>
 <text x="98.25" y="314" font-size="11" font-weight="500" fill="#5d677b" text-anchor="middle">Dez</text>
-<text x="98.25" y="281.60990349577304" font-size="10.5" font-weight="600" fill="#8b95a9" text-anchor="middle">2</text>
-<rect x="122.0" y="280.4" width="27.5" height="13.6" rx="4" fill="#818cf8" opacity="0.6"/>
+<text x="98.25" y="281.6494710372288" font-size="10.5" font-weight="600" fill="#8b95a9" text-anchor="middle">2</text>
+<rect x="122.0" y="280.5" width="27.5" height="13.5" rx="4" fill="#818cf8" opacity="0.6"/>
 <text x="135.75" y="314" font-size="11" font-weight="500" fill="#5d677b" text-anchor="middle">Jan</text>
-<text x="135.75" y="274.44455828827404" font-size="10.5" font-weight="600" fill="#8b95a9" text-anchor="middle">9</text>
-<rect x="159.5" y="254.6" width="27.5" height="39.4" rx="4" fill="#818cf8" opacity="0.6"/>
+<text x="135.75" y="274.52849371890875" font-size="10.5" font-weight="600" fill="#8b95a9" text-anchor="middle">9</text>
+<rect x="159.5" y="254.9" width="27.5" height="39.1" rx="4" fill="#818cf8" opacity="0.6"/>
 <text x="173.25" y="314" font-size="11" font-weight="500" fill="#5d677b" text-anchor="middle">Feb</text>
-<text x="173.25" y="248.60879962902035" font-size="10.5" font-weight="600" fill="#8b95a9" text-anchor="middle">76</text>
-<rect x="197.0" y="279.7" width="27.5" height="14.3" rx="4" fill="#818cf8" opacity="0.6"/>
+<text x="173.25" y="248.85271033563316" font-size="10.5" font-weight="600" fill="#8b95a9" text-anchor="middle">76</text>
+<rect x="197.0" y="279.8" width="27.5" height="14.2" rx="4" fill="#818cf8" opacity="0.6"/>
 <text x="210.75" y="314" font-size="11" font-weight="500" fill="#5d677b" text-anchor="middle">Mär</text>
-<text x="210.75" y="273.7113098337648" font-size="10.5" font-weight="600" fill="#8b95a9" text-anchor="middle">10</text>
-<rect x="234.5" y="273.3" width="27.5" height="20.7" rx="4" fill="#818cf8" opacity="0.6"/>
+<text x="210.75" y="273.79978554616235" font-size="10.5" font-weight="600" fill="#8b95a9" text-anchor="middle">10</text>
+<rect x="234.5" y="273.4" width="27.5" height="20.6" rx="4" fill="#818cf8" opacity="0.6"/>
 <text x="248.25" y="314" font-size="11" font-weight="500" fill="#5d677b" text-anchor="middle">Apr</text>
-<text x="248.25" y="267.29372075915137" font-size="10.5" font-weight="600" fill="#8b95a9" text-anchor="middle">21</text>
+<text x="248.25" y="267.42193424727543" font-size="10.5" font-weight="600" fill="#8b95a9" text-anchor="middle">21</text>
 <rect x="272.0" y="285.0" width="27.5" height="9.0" rx="4" fill="#818cf8" opacity="0.6"/>
 <text x="285.75" y="314" font-size="11" font-weight="500" fill="#5d677b" text-anchor="middle">Mai</text>
-<text x="285.75" y="278.96303885884936" font-size="10.5" font-weight="600" fill="#8b95a9" text-anchor="middle">4</text>
+<text x="285.75" y="279.0189958126058" font-size="10.5" font-weight="600" fill="#8b95a9" text-anchor="middle">4</text>
 <rect x="309.5" y="285.0" width="27.5" height="9.0" rx="4" fill="#818cf8" opacity="0.6"/>
 <text x="323.25" y="314" font-size="11" font-weight="500" fill="#5d677b" text-anchor="middle">Jun</text>
-<text x="323.25" y="278.96303885884936" font-size="10.5" font-weight="600" fill="#8b95a9" text-anchor="middle">4</text>
+<text x="323.25" y="279.0189958126058" font-size="10.5" font-weight="600" fill="#8b95a9" text-anchor="middle">4</text>
 <rect x="347.0" y="286.2" width="27.5" height="7.8" rx="4" fill="#818cf8" opacity="0.6"/>
 <text x="360.75" y="314" font-size="11" font-weight="500" fill="#5d677b" text-anchor="middle">Jul</text>
-<text x="360.75" y="280.1737620787507" font-size="10.5" font-weight="600" fill="#8b95a9" text-anchor="middle">3</text>
+<text x="360.75" y="280.22222222222223" font-size="10.5" font-weight="600" fill="#8b95a9" text-anchor="middle">3</text>
 <rect x="384.5" y="286.2" width="27.5" height="7.8" rx="4" fill="#818cf8" opacity="0.6"/>
 <text x="398.25" y="314" font-size="11" font-weight="500" fill="#5d677b" text-anchor="middle">Aug</text>
-<text x="398.25" y="280.1737620787507" font-size="10.5" font-weight="600" fill="#8b95a9" text-anchor="middle">3</text>
+<text x="398.25" y="280.22222222222223" font-size="10.5" font-weight="600" fill="#8b95a9" text-anchor="middle">3</text>
 <rect x="422.0" y="287.6" width="27.5" height="6.4" rx="4" fill="#818cf8" opacity="0.6"/>
 <text x="435.75" y="314" font-size="11" font-weight="500" fill="#5d677b" text-anchor="middle">Sep</text>
-<text x="435.75" y="281.60990349577304" font-size="10.5" font-weight="600" fill="#8b95a9" text-anchor="middle">2</text>
+<text x="435.75" y="281.6494710372288" font-size="10.5" font-weight="600" fill="#8b95a9" text-anchor="middle">2</text>
 <rect x="459.5" y="224.0" width="27.5" height="70.0" rx="4" fill="#818cf8" opacity="1"/>
 <text x="473.25" y="314" font-size="11" font-weight="700" fill="#818cf8" text-anchor="middle">Okt</text>
-<text x="473.25" y="218" font-size="10.5" font-weight="600" fill="#818cf8" text-anchor="middle">240</text>
+<text x="473.25" y="218" font-size="10.5" font-weight="600" fill="#818cf8" text-anchor="middle">243</text>
 <rect x="526" y="168" width="290" height="168" rx="12" fill="#171f30"/>
 <text x="544" y="196" font-size="12.5" font-weight="600" fill="#8b95a9">Häufigste Sprachen</text>
 <clipPath id="langbar"><rect x="544" y="210" width="254" height="10" rx="5"/></clipPath>
-<g clip-path="url(#langbar)"><rect x="544" y="210" width="254" height="10" fill="#1f2839"/><rect x="544.0" y="210" width="133.1" height="10" fill="#818cf8"/><rect x="677.1" y="210" width="41.0" height="10" fill="#38bdf8"/><rect x="718.0" y="210" width="31.5" height="10" fill="#34d399"/><rect x="749.5" y="210" width="20.1" height="10" fill="#fbbf24"/><rect x="769.6" y="210" width="19.4" height="10" fill="#a78bfa"/><rect x="789.0" y="210" width="9.0" height="10" fill="#5d677b"/></g>
+<g clip-path="url(#langbar)"><rect x="544" y="210" width="254" height="10" fill="#1f2839"/><rect x="544.0" y="210" width="132.8" height="10" fill="#818cf8"/><rect x="676.8" y="210" width="40.9" height="10" fill="#38bdf8"/><rect x="717.7" y="210" width="31.5" height="10" fill="#34d399"/><rect x="749.2" y="210" width="20.5" height="10" fill="#fbbf24"/><rect x="769.7" y="210" width="19.3" height="10" fill="#a78bfa"/><rect x="789.0" y="210" width="9.0" height="10" fill="#5d677b"/></g>
 <circle cx="549" cy="246" r="5" fill="#818cf8"/>
 <text x="560" y="250" font-size="13" font-weight="600" fill="#e8ecf4">Svelte</text>
 <text x="659" y="250" font-size="12.5" font-weight="400" fill="#8b95a9" text-anchor="end">52 %</text>
@@ -72,7 +72,7 @@
 <text x="659" y="278" font-size="12.5" font-weight="400" fill="#8b95a9" text-anchor="end">12 %</text>
 <circle cx="676" cy="274" r="5" fill="#fbbf24"/>
 <text x="687" y="278" font-size="13" font-weight="600" fill="#e8ecf4">JavaScript</text>
-<text x="786" y="278" font-size="12.5" font-weight="400" fill="#8b95a9" text-anchor="end">7,9 %</text>
+<text x="786" y="278" font-size="12.5" font-weight="400" fill="#8b95a9" text-anchor="end">8,1 %</text>
 <circle cx="549" cy="302" r="5" fill="#a78bfa"/>
 <text x="560" y="306" font-size="13" font-weight="600" fill="#e8ecf4">Kotlin</text>
 <text x="659" y="306" font-size="12.5" font-weight="400" fill="#8b95a9" text-anchor="end">7,6 %</text>
