@@ -1,12 +1,13 @@
 [English](README.md) · **Deutsch**
 
-![Jayesh Kakkad — Softwarearchitekt und Embedded-Entwickler](assets/banner-de.svg)
-
-**Sichere, skalierbare Plattformen an der Schnittstelle zwischen Embedded-Hardware und moderner Software.**
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/hero-de-dark.svg">
+  <img alt="Jayesh Kakkad — Softwarearchitekt und Embedded-Entwickler. Sichere, skalierbare Plattformen an der Schnittstelle zwischen Embedded-Hardware und moderner Software: von Firmware und Treibern über Videopipelines am Edge bis zu Plattformdiensten und Web-Apps." src="assets/cards/hero-de-light.svg" width="100%">
+</picture>
 
 [Portfolio ↗](https://www.jayesh-kakkad.de/de/) · [LinkedIn ↗](https://www.linkedin.com/in/jayesh-kakkad) · [E-Mail ↗](mailto:contact@jayesh-kakkad.com)
 
-[Über mich](#über-mich) · [Entwicklung](#was-ich-entwickle) · [Werkzeuge](#technologien) · [Lehre](#mentoring--lehre)
+[Über mich](#über-mich) · [Entwicklung](#was-ich-entwickle) · [Werkzeuge](#technologien) · [Aktivität](#github-aktivität) · [Lehre](#mentoring--lehre)
 
 ## Über mich
 
@@ -18,38 +19,29 @@ Neben meiner Entwicklungsarbeit unterrichte ich ehrenamtlich an der [ReDI School
 
 ## Was ich entwickle
 
-### 01 / Plattformarchitektur
-Sichere industrielle IoT-Plattformen, die Orchestrierung von Edge-Geräten, verteilte Dienste und die Integration betrieblicher Abläufe.
-
-### 02 / Embedded-Entwicklung
-Embedded Linux mit Yocto und PTXdist, Videopipelines mit V4L2 und GStreamer sowie Software für ZynqMP- und ARM-Plattformen.
-
-### 03 / Full-Stack-Entwicklung
-Oberflächen mit SvelteKit, React und TypeScript; APIs und Datenhaltung mit FastAPI, Node.js, PostgreSQL und Prisma. Selbst gehostete Bereitstellung mit Docker.
-
-### 04 / Security Engineering
-Bedrohungsmodellierung, sichere Entwicklung und praktische Sicherheitstests. Zu meinen Werkzeugen gehören Burp Suite, Nessus, Wireshark und die Kali-Toolchain.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/focus-de-dark.svg">
+  <img alt="Was ich entwickle. 01 Plattformarchitektur: sichere industrielle IoT-Plattformen, Orchestrierung von Edge-Geräten, verteilte Dienste und Integrationen. 02 Embedded-Entwicklung: Embedded Linux mit Yocto und PTXdist, Videopipelines mit V4L2 und GStreamer, Software für ZynqMP und ARM. 03 Full-Stack-Entwicklung: Oberflächen mit SvelteKit, React und TypeScript; APIs und Daten mit FastAPI, Node.js, PostgreSQL und Prisma, selbst gehostet mit Docker. 04 Security Engineering: Bedrohungsmodellierung, sichere Entwicklung und Sicherheitstests mit Burp Suite, Nessus, Wireshark und Kali." src="assets/cards/focus-de-light.svg" width="100%">
+</picture>
 
 ## Technologien
 
-**Programmiersprachen**
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/stack-de-dark.svg">
+  <img alt="Werkzeuge. Sprachen: C, C++, Python, TypeScript, JavaScript, Nim. Frontend und Backend: SvelteKit, React, Tailwind, Node.js, FastAPI, Prisma. Daten und Infrastruktur: PostgreSQL, Supabase, Docker, Linux, Git, VS Code. Embedded: Embedded Linux, Yocto, PTXdist, V4L2, GStreamer, ZynqMP, ARM. Sicherheit: OWASP Top 10, OWASP IoT Top 10, Bedrohungsmodellierung, Burp Suite, Nessus, Wireshark." src="assets/cards/stack-de-light.svg" width="100%">
+</picture>
 
-![Programmiersprachen](https://skillicons.dev/icons?i=c,cpp,python,ts,js,nim&perline=3)
+## GitHub-Aktivität
 
-**Frontend & Backend**
-
-![Frontend & Backend](https://skillicons.dev/icons?i=svelte,react,tailwind,nodejs,fastapi,prisma&perline=3)
-
-**Daten & Infrastruktur**
-
-![Daten & Infrastruktur](https://skillicons.dev/icons?i=postgres,supabase,docker,linux,git,vscode&perline=3)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/stats-de-dark.svg">
+  <img alt="GitHub-Aktivität der letzten 12 Monate: Beiträge, Commits, aktive Tage, Repositories, Beiträge pro Monat und häufigste Sprachen. Wird zweimal täglich aktualisiert." src="assets/cards/stats-de-light.svg" width="100%">
+</picture>
 
 <details>
-<summary>Werkzeuge für Embedded-Entwicklung und Sicherheit</summary>
+<summary>Ausführliche GitHub-Statistiken</summary>
 
-**Embedded:** Embedded Linux · Yocto · PTXdist · V4L2 · GStreamer · C / C++
-
-**Sicherheit:** OWASP Top 10 · OWASP IoT Top 10 · Bedrohungsmodellierung · Burp Suite · Nessus · Wireshark
+![Ausführliche GitHub-Aktivität und Statistiken](github-metrics.svg)
 
 </details>
 
@@ -58,13 +50,6 @@ Bedrohungsmodellierung, sichere Entwicklung und praktische Sicherheitstests. Zu 
 Die vollständige Sammlung: Projektkontext auf meiner Website, Quellcode auf GitHub.
 
 [Zum Projektkatalog ↗](https://www.jayesh-kakkad.de/de/projects/) · [Repositories entdecken ↗](https://github.com/JayeshKakkad-Rotoclear?tab=repositories)
-
-<details>
-<summary>GitHub-Aktivität und Statistiken</summary>
-
-![GitHub-Aktivität und Statistiken](github-metrics.svg)
-
-</details>
 
 ## Mentoring & Lehre
 
@@ -86,7 +71,6 @@ Grundlagen der Programmierung, Cybersicherheit und praktische technische Problem
 | [Live RDP Brute Force Detection — Azure Sentinel](https://www.youtube.com/watch?v=yU_YuGYtJGU) | SIEM und Bedrohungserkennung |
 | [Ransomware PoC (C#)](https://youtu.be/dab8pQ5UVjs) | Funktionsweise von Ransomware verstehen |
 | [Vulnerability Management with Nessus Essentials](https://youtu.be/mnjxUoBTyKs) | Praktische Schwachstellenanalyse |
-
 
 </details>
 
