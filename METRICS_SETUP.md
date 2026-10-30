@@ -62,6 +62,8 @@ The workflow runs:
 - On every push to `main` branch
 - Manually via Actions tab
 
+The **Profile Cards** workflow (`.github/workflows/profile-cards.yml`) uses the same `METRICS_TOKEN` to refresh the activity card in the README twice a day, 30 minutes after this one. It stores aggregate numbers only (`assets/cards/stats.json`). If the token is missing or rejected, it keeps the last snapshot instead of failing the profile.
+
 ## Troubleshooting
 
 **Workflow fails with "Bad credentials" or "GitHub rejected METRICS_TOKEN":**

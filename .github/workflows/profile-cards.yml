@@ -1,0 +1,58 @@
+name: Profile Cards
+on:
+  schedule:
+    - cron: "30 */12 * * *"   # Twice daily, 30 min after GitHub Metrics
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - scripts/profile-cards.mjs
+      - .github/workflows/profile-cards.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: false
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Render cards with fresh stats
+        env:
+          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: |
+          if [[ -z "$METRICS_TOKEN" ]]; then
+            echo "::warning::METRICS_TOKEN is missing; rendering cards from the last stats snapshot. See METRICS_SETUP.md."
+            node scripts/profile-cards.mjs
+          else
+            node scripts/profile-cards.mjs --fetch
+          fi
+
+      - name: Commit changed cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/cards
+          if git diff --cached --quiet; then
+            echo "Cards unchanged."
+            exit 0
+          fi
+          git commit -m "chore: update profile cards"
+          # The metrics workflow also commits to main; rebase onto it if needed
+          for attempt in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              exit 0
+            fi
+            sleep 10
+          done
+          exit 1
