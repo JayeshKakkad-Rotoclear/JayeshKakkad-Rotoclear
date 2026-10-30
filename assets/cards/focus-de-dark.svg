@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="436" viewBox="0 0 840 436" role="img" aria-label="WAS ICH ENTWICKLE: Plattformarchitektur, Embedded-Entwicklung, Full-Stack-Entwicklung, Security Engineering">
+<title>WAS ICH ENTWICKLE: Plattformarchitektur, Embedded-Entwicklung, Full-Stack-Entwicklung, Security Engineering</title>
+<defs>
+<radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0) scale(560 300)"><stop stop-color="rgba(129,140,248,0.16)"/><stop offset="1" stop-color="rgba(129,140,248,0.16)" stop-opacity="0"/></radialGradient>
+</defs>
+<g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif">
+<rect x="0.5" y="0.5" width="839" height="435" rx="18" fill="#121826" stroke="#222c40"/>
+
+<rect x="24" y="24" width="388" height="186" rx="14" fill="#171f30"/>
+<rect x="44" y="44" width="36" height="28" rx="8" fill="rgba(129,140,248,0.14)"/>
+<text x="62" y="63" font-size="13" font-weight="700" fill="#818cf8" text-anchor="middle">01</text>
+<text x="92" y="64" font-size="17" font-weight="650" fill="#e8ecf4">Plattformarchitektur</text>
+<text x="44" y="98" font-size="13.5" font-weight="400" fill="#8b95a9">Sichere industrielle IoT-Plattformen, Orchestrierung</text>
+<text x="44" y="118" font-size="13.5" font-weight="400" fill="#8b95a9">von Edge-Geräten, verteilte Dienste und Integrationen.</text>
+<rect x="44" y="168" width="43" height="24" rx="12" fill="#1e2739"/><text x="65.5" y="184.32" font-size="12" font-weight="600" fill="#c3cad8" text-anchor="middle">IoT</text>
+<rect x="93" y="168" width="53" height="24" rx="12" fill="#1e2739"/><text x="119.5" y="184.32" font-size="12" font-weight="600" fill="#c3cad8" text-anchor="middle">Edge</text>
+<rect x="152" y="168" width="132" height="24" rx="12" fill="#1e2739"/><text x="218" y="184.32" font-size="12" font-weight="600" fill="#c3cad8" text-anchor="middle">Verteilte Systeme</text>
+<rect x="428" y="24" width="388" height="186" rx="14" fill="#171f30"/>
+<rect x="448" y="44" width="36" height="28" rx="8" fill="rgba(129,140,248,0.14)"/>
+<text x="466" y="63" font-size="13" font-weight="700" fill="#818cf8" text-anchor="middle">02</text>
+<text x="496" y="64" font-size="17" font-weight="650" fill="#e8ecf4">Embedded-Entwicklung</text>
+<text x="448" y="98" font-size="13.5" font-weight="400" fill="#8b95a9">Embedded Linux mit Yocto und PTXdist,</text>
+<text x="448" y="118" font-size="13.5" font-weight="400" fill="#8b95a9">Videopipelines mit V4L2 und GStreamer, Software für</text>
+<text x="448" y="138" font-size="13.5" font-weight="400" fill="#8b95a9">ZynqMP und ARM.</text>
+<rect x="448" y="168" width="58" height="24" rx="12" fill="#1e2739"/><text x="477" y="184.32" font-size="12" font-weight="600" fill="#c3cad8" text-anchor="middle">Yocto</text>
+<rect x="512" y="168" width="87" height="24" rx="12" fill="#1e2739"/><text x="555.5" y="184.32" font-size="12" font-weight="600" fill="#c3cad8" text-anchor="middle">GStreamer</text>
+<rect x="605" y="168" width="72" height="24" rx="12" fill="#1e2739"/><text x="641" y="184.32" font-size="12" font-weight="600" fill="#c3cad8" text-anchor="middle">ZynqMP</text>
+<rect x="24" y="226" width="388" height="186" rx="14" fill="#171f30"/>
+<rect x="44" y="246" width="36" height="28" rx="8" fill="rgba(129,140,248,0.14)"/>
+<text x="62" y="265" font-size="13" font-weight="700" fill="#818cf8" text-anchor="middle">03</text>
+<text x="92" y="266" font-size="17" font-weight="650" fill="#e8ecf4">Full-Stack-Entwicklung</text>
+<text x="44" y="300" font-size="13.5" font-weight="400" fill="#8b95a9">Oberflächen mit SvelteKit, React und TypeScript; APIs</text>
+<text x="44" y="320" font-size="13.5" font-weight="400" fill="#8b95a9">und Daten mit FastAPI, Node.js, PostgreSQL und</text>
+<text x="44" y="340" font-size="13.5" font-weight="400" fill="#8b95a9">Prisma.</text>
+<rect x="44" y="370" width="79" height="24" rx="12" fill="#1e2739"/><text x="83.5" y="386.32" font-size="12" font-weight="600" fill="#c3cad8" text-anchor="middle">SvelteKit</text>
+<rect x="129" y="370" width="72" height="24" rx="12" fill="#1e2739"/><text x="165" y="386.32" font-size="12" font-weight="600" fill="#c3cad8" text-anchor="middle">FastAPI</text>
+<rect x="207" y="370" width="65" height="24" rx="12" fill="#1e2739"/><text x="239.5" y="386.32" font-size="12" font-weight="600" fill="#c3cad8" text-anchor="middle">Docker</text>
+<rect x="428" y="226" width="388" height="186" rx="14" fill="#171f30"/>
+<rect x="448" y="246" width="36" height="28" rx="8" fill="rgba(129,140,248,0.14)"/>
+<text x="466" y="265" font-size="13" font-weight="700" fill="#818cf8" text-anchor="middle">04</text>
+<text x="496" y="266" font-size="17" font-weight="650" fill="#e8ecf4">Security Engineering</text>
+<text x="448" y="300" font-size="13.5" font-weight="400" fill="#8b95a9">Bedrohungsmodellierung, sichere Entwicklung und</text>
+<text x="448" y="320" font-size="13.5" font-weight="400" fill="#8b95a9">Sicherheitstests mit Burp Suite, Nessus, Wireshark</text>
+<text x="448" y="340" font-size="13.5" font-weight="400" fill="#8b95a9">und Kali.</text>
+<rect x="448" y="370" width="69" height="24" rx="12" fill="#1e2739"/><text x="482.5" y="386.32" font-size="12" font-weight="600" fill="#c3cad8" text-anchor="middle">OWASP</text>
+<rect x="523" y="370" width="131" height="24" rx="12" fill="#1e2739"/><text x="588.5" y="386.32" font-size="12" font-weight="600" fill="#c3cad8" text-anchor="middle">Bedrohungsmodell</text>
+<rect x="660" y="370" width="58" height="24" rx="12" fill="#1e2739"/><text x="689" y="386.32" font-size="12" font-weight="600" fill="#c3cad8" text-anchor="middle">Tests</text>
+</g>
+</svg>

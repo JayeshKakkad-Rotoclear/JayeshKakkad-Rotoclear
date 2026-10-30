@@ -1,0 +1,83 @@
+{
+  "generatedAt": "2026-10-30T23:46:18.490Z",
+  "contributions": 374,
+  "commits": 373,
+  "activeDays": 54,
+  "repositories": 23,
+  "months": [
+    {
+      "month": "2025-11",
+      "count": 0
+    },
+    {
+      "month": "2025-12",
+      "count": 2
+    },
+    {
+      "month": "2026-01",
+      "count": 9
+    },
+    {
+      "month": "2026-02",
+      "count": 76
+    },
+    {
+      "month": "2026-03",
+      "count": 10
+    },
+    {
+      "month": "2026-04",
+      "count": 21
+    },
+    {
+      "month": "2026-05",
+      "count": 4
+    },
+    {
+      "month": "2026-06",
+      "count": 4
+    },
+    {
+      "month": "2026-07",
+      "count": 3
+    },
+    {
+      "month": "2026-08",
+      "count": 3
+    },
+    {
+      "month": "2026-09",
+      "count": 2
+    },
+    {
+      "month": "2026-10",
+      "count": 240
+    }
+  ],
+  "languages": [
+    {
+      "name": "Svelte",
+      "percent": 52.38199098019557
+    },
+    {
+      "name": "TypeScript",
+      "percent": 16.12554984568532
+    },
+    {
+      "name": "Python",
+      "percent": 12.414972129156233
+    },
+    {
+      "name": "JavaScript",
+      "percent": 7.910401829416491
+    },
+    {
+      "name": "Kotlin",
+      "percent": 7.6251574933215425
+    },
+    {
+      "name": "Other",
+      "percent": 3.541927722224846
+    }
+  ]
+}
