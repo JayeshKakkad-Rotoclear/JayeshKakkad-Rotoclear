@@ -35,7 +35,7 @@ Neben meiner Entwicklungsarbeit unterrichte ich ehrenamtlich an der [ReDI School
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cards/stats-de-dark.svg">
-  <img alt="GitHub-Aktivität der letzten 12 Monate: Beiträge, Commits, aktive Tage, Repositories, Beiträge pro Monat und häufigste Sprachen. Wird zweimal täglich aktualisiert." src="assets/cards/stats-de-light.svg" width="100%">
+  <img alt="GitHub-Aktivität: Commits in diesem Jahr, in den letzten 12 Monaten und diesen Monat, aktive Repositories, Commits pro Monat über persönliche und Organisations-Repositories sowie häufigste Sprachen. Wird zweimal täglich aktualisiert." src="assets/cards/stats-de-light.svg" width="100%">
 </picture>
 
 <details>

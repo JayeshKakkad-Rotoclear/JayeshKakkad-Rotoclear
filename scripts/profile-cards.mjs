@@ -86,8 +86,8 @@ const CONTENT = {
       title: 'GITHUB ACTIVITY',
       period: 'Last 12 months',
       updated: 'Updated',
-      kpis: ['Contributions', 'Commits', 'Active days', 'Repositories'],
-      activity: 'Contributions per month',
+      kpis: ['Commits {year}', 'Commits · 12 months', 'Commits this month', 'Active repositories'],
+      activity: 'Commits per month · all repositories',
       languages: 'Top languages',
       other: 'Other',
       locale: 'en-GB'
@@ -126,8 +126,8 @@ const CONTENT = {
       title: 'GITHUB-AKTIVITÄT',
       period: 'Letzte 12 Monate',
       updated: 'Stand',
-      kpis: ['Beiträge', 'Commits', 'Aktive Tage', 'Repositories'],
-      activity: 'Beiträge pro Monat',
+      kpis: ['Commits {year}', 'Commits · 12 Monate', 'Commits diesen Monat', 'Aktive Repositories'],
+      activity: 'Commits pro Monat · alle Repositories',
       languages: 'Häufigste Sprachen',
       other: 'Andere',
       locale: 'de-DE'
@@ -313,13 +313,14 @@ function renderStats(c, t, stats) {
   parts.push(text(WIDTH - 28, 42, `${s.updated} ${updated}`, { size: 12, fill: t.faint, anchor: 'end' }));
 
   // KPI tiles
-  const kpiValues = [stats.contributions, stats.commits, stats.activeDays, stats.repositories];
+  const kpiValues = [stats.commitsYear, stats.commits12Months, stats.commitsThisMonth, stats.activeRepositories];
+  const kpiLabels = s.kpis.map(label => label.replace('{year}', stats.year));
   const gap = 12, x0 = 24, kw = (WIDTH - x0 * 2 - gap * 3) / 4, ky = 60, kh = 84;
   kpiValues.forEach((value, i) => {
     const x = x0 + i * (kw + gap);
     parts.push(`<rect x="${x}" y="${ky}" width="${kw}" height="${kh}" rx="12" fill="${t.surface2}"/>`);
     parts.push(text(x + 18, ky + 44, fmt(value), { size: 28, fill: i === 0 ? t.accent : t.text, weight: 700, spacing: -0.5 }));
-    parts.push(text(x + 18, ky + 68, s.kpis[i], { size: 12.5, fill: t.muted }));
+    parts.push(text(x + 18, ky + 68, kpiLabels[i], { size: 12.5, fill: t.muted }));
   });
 
   // Monthly activity bars (12 months, current month highlighted)
@@ -369,7 +370,7 @@ function renderStats(c, t, stats) {
   });
 
   const height = ay + ah + 24;
-  const summary = `${s.title}: ${s.kpis.map((k, i) => `${k} ${fmt(kpiValues[i])}`).join(', ')}; ${s.languages}: ${langs.map(l => `${l.name} ${l.percent.toFixed(0)}%`).join(', ')}`;
+  const summary = `${s.title}: ${kpiLabels.map((k, i) => `${k} ${fmt(kpiValues[i])}`).join(', ')}; ${s.languages}: ${langs.map(l => `${l.name} ${l.percent.toFixed(0)}%`).join(', ')}`;
   return frame(height, t, parts.join('\n'), summary);
 }
 
@@ -377,50 +378,80 @@ function renderStats(c, t, stats) {
 // GitHub stats (aggregates only)
 // ---------------------------------------------------------------------------
 
+/**
+ * Counts real commits instead of GitHub's contribution graph.
+ *
+ * The profile contribution graph silently undercounts: for this account it
+ * showed ~370 contributions for a year with 1,600+ commits on default
+ * branches of organisation repositories. Commit search (author + author
+ * date, default branches, all repositories the token can read) matches a
+ * direct per-repository count exactly, so it is the source here.
+ */
 async function fetchStats(token) {
-  const query = `query($cursor: String) {
-    viewer {
-      contributionsCollection {
-        totalCommitContributions
-
-        restrictedContributionsCount
-        contributionCalendar { totalContributions weeks { contributionDays { contributionCount date } } }
-      }
-      repositories(first: 100, after: $cursor, isFork: false, ownerAffiliations: [OWNER, COLLABORATOR, ORGANIZATION_MEMBER]) {
-        totalCount
-        pageInfo { hasNextPage endCursor }
-        nodes { languages(first: 10, orderBy: { field: SIZE, direction: DESC }) { edges { size node { name } } } }
-      }
+  const headers = {
+    Authorization: `Bearer ${token}`,
+    Accept: 'application/vnd.github+json',
+    'User-Agent': 'profile-cards',
+    'X-GitHub-Api-Version': '2022-11-28'
+  };
+  const get = async (url) => {
+    const res = await fetch(url.startsWith('http') ? url : `https://api.github.com${url}`, { headers });
+    if (!res.ok) {
+      throw new Error(`GitHub API ${res.status} for ${url}: ${(await res.text()).slice(0, 200)}`);
     }
-  }`;
+    return { body: await res.json(), link: res.headers.get('link') || '' };
+  };
+  const nextLink = (link) => /<([^>]+)>;\s*rel="next"/.exec(link)?.[1] || null;
 
-  const call = async (cursor) => {
-    const res = await fetch('https://api.github.com/graphql', {
-      method: 'POST',
-      headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json', 'User-Agent': 'profile-cards' },
-      body: JSON.stringify({ query, variables: { cursor } })
-    });
-    const body = await res.json();
-    if (!res.ok || body.errors) {
-      throw new Error(`GitHub API ${res.status}: ${JSON.stringify(body.errors || body.message)}`);
-    }
-    return body.data.viewer;
+  const { body: user } = await get('/user');
+  const login = user.login;
+  const day = (d) => d.toISOString().slice(0, 10);
+
+  // Commit search: total_count only (results are capped at 1000, counts are not)
+  const countCommits = async (from, to) => {
+    const q = encodeURIComponent(`author:${login} author-date:${day(from)}..${day(to)}`);
+    const { body } = await get(`/search/commits?q=${q}&per_page=1`);
+    return body.total_count;
   };
 
-  const first = await call(null);
-  const nodes = [...first.repositories.nodes];
-  let page = first.repositories.pageInfo;
-  while (page.hasNextPage && nodes.length < 500) {
-    const next = await call(page.endCursor);
-    nodes.push(...next.repositories.nodes);
-    page = next.repositories.pageInfo;
+  const now = new Date();
+  const yearStart = new Date(Date.UTC(now.getUTCFullYear(), 0, 1));
+  const twelveMonthsAgo = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() - 11, 1));
+
+  const months = [];
+  for (let i = 0; i < 12; i++) {
+    const from = new Date(Date.UTC(twelveMonthsAgo.getUTCFullYear(), twelveMonthsAgo.getUTCMonth() + i, 1));
+    const to = new Date(Date.UTC(from.getUTCFullYear(), from.getUTCMonth() + 1, 0));
+    months.push({ month: day(from).slice(0, 7), count: await countCommits(from, to) });
+  }
+  const commitsYear = await countCommits(yearStart, now);
+  const commits12Months = months.reduce((sum, m) => sum + m.count, 0);
+
+  // Repositories the account can read (personal, collaborator, organisations)
+  const repos = [];
+  for (let url = '/user/repos?per_page=100&affiliation=owner,collaborator,organization_member'; url;) {
+    const { body, link } = await get(url);
+    repos.push(...body.filter(r => !r.fork));
+    url = nextLink(link);
   }
 
-  const bytes = {};
-  for (const repo of nodes) {
-    for (const edge of repo.languages.edges) {
-      bytes[edge.node.name] = (bytes[edge.node.name] || 0) + edge.size;
+  // Active repositories: at least one own commit in the last 12 months
+  const since = twelveMonthsAgo.toISOString();
+  const active = [];
+  for (const repo of repos) {
+    try {
+      const { body } = await get(`/repos/${repo.full_name}/commits?author=${login}&since=${since}&per_page=1`);
+      if (Array.isArray(body) && body.length > 0) active.push(repo);
+    } catch {
+      // empty repositories answer 409; skip
     }
+  }
+
+  // Language share across the repositories actually worked on
+  const bytes = {};
+  for (const repo of active) {
+    const { body } = await get(`/repos/${repo.full_name}/languages`);
+    for (const [name, size] of Object.entries(body)) bytes[name] = (bytes[name] || 0) + size;
   }
   const total = Object.values(bytes).reduce((a, b) => a + b, 0) || 1;
   const sorted = Object.entries(bytes).sort((a, b) => b[1] - a[1]);
@@ -428,20 +459,14 @@ async function fetchStats(token) {
   const rest = sorted.slice(5).reduce((sum, [, size]) => sum + size, 0);
   if (rest > 0) top.push({ name: 'Other', percent: (rest / total) * 100 });
 
-  const cc = first.contributionsCollection;
   return {
-    generatedAt: new Date().toISOString(),
-    contributions: cc.contributionCalendar.totalContributions,
-    commits: cc.totalCommitContributions + cc.restrictedContributionsCount,
-    activeDays: cc.contributionCalendar.weeks.reduce((n, w) => n + w.contributionDays.filter(d => d.contributionCount > 0).length, 0),
-    repositories: first.repositories.totalCount,
-    months: Object.entries(
-      cc.contributionCalendar.weeks.flatMap(w => w.contributionDays).reduce((acc, d) => {
-        const key = d.date.slice(0, 7);
-        acc[key] = (acc[key] || 0) + d.contributionCount;
-        return acc;
-      }, {})
-    ).sort(([a], [b]) => a.localeCompare(b)).slice(-12).map(([month, count]) => ({ month, count })),
+    generatedAt: now.toISOString(),
+    year: now.getUTCFullYear(),
+    commitsYear,
+    commits12Months,
+    commitsThisMonth: months[months.length - 1].count,
+    activeRepositories: active.length,
+    months,
     languages: top
   };
 }
@@ -458,7 +483,7 @@ async function main() {
     try {
       stats = await fetchStats(token);
       fs.writeFileSync(STATS_FILE, JSON.stringify(stats, null, 2) + '\n');
-      console.log(`stats: ${stats.contributions} contributions, ${stats.repositories} repositories`);
+      console.log(`stats: ${stats.commitsYear} commits in ${stats.year}, ${stats.commits12Months} in 12 months, ${stats.activeRepositories} active repositories`);
     } catch (err) {
       // Keep the last good snapshot rather than failing the profile
       if (!stats) throw err;

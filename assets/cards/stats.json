@@ -1,83 +1,84 @@
 {
-  "generatedAt": "2026-10-30T23:56:26.445Z",
-  "contributions": 377,
-  "commits": 333,
-  "activeDays": 54,
-  "repositories": 23,
+  "generatedAt": "2026-10-31T00:02:55.218Z",
+  "year": 2026,
+  "commitsYear": 1644,
+  "commits12Months": 1689,
+  "commitsThisMonth": 555,
+  "activeRepositories": 25,
   "months": [
     {
       "month": "2025-11",
-      "count": 0
+      "count": 6
     },
     {
       "month": "2025-12",
-      "count": 2
+      "count": 39
     },
     {
       "month": "2026-01",
-      "count": 9
+      "count": 102
     },
     {
       "month": "2026-02",
-      "count": 76
+      "count": 121
     },
     {
       "month": "2026-03",
-      "count": 10
+      "count": 93
     },
     {
       "month": "2026-04",
-      "count": 21
+      "count": 190
     },
     {
       "month": "2026-05",
-      "count": 4
+      "count": 51
     },
     {
       "month": "2026-06",
-      "count": 4
+      "count": 31
     },
     {
       "month": "2026-07",
-      "count": 3
+      "count": 174
     },
     {
       "month": "2026-08",
-      "count": 3
+      "count": 129
     },
     {
       "month": "2026-09",
-      "count": 2
+      "count": 198
     },
     {
       "month": "2026-10",
-      "count": 243
+      "count": 555
     }
   ],
   "languages": [
     {
       "name": "Svelte",
-      "percent": 52.30137569721794
+      "percent": 43.279866159241195
     },
     {
       "name": "TypeScript",
-      "percent": 16.100732809531213
+      "percent": 11.774986982715614
     },
     {
-      "name": "Python",
-      "percent": 12.395865629524907
+      "name": "Nim",
+      "percent": 10.09847757874745
     },
     {
       "name": "JavaScript",
-      "percent": 8.052126664171698
+      "percent": 9.144056949520936
     },
     {
-      "name": "Kotlin",
-      "percent": 7.61342246344638
+      "name": "Python",
+      "percent": 9.086204497796404
     },
     {
       "name": "Other",
-      "percent": 3.5364767361078546
+      "percent": 16.616407831978407
     }
   ]
 }

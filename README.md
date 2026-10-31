@@ -35,7 +35,7 @@ Alongside engineering, I volunteer as an instructor at [ReDI School of Digital I
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cards/stats-en-dark.svg">
-  <img alt="GitHub activity over the last 12 months: contributions, commits, active days, repositories, contributions per month and top languages. Refreshed twice a day." src="assets/cards/stats-en-light.svg" width="100%">
+  <img alt="GitHub activity: commits this year, in the last 12 months and this month, active repositories, commits per month across personal and organisation repositories, and top languages. Refreshed twice a day." src="assets/cards/stats-en-light.svg" width="100%">
 </picture>
 
 <details>
