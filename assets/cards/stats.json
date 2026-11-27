@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-26T21:50:12.511Z",
+  "generatedAt": "2026-11-27T08:56:45.778Z",
   "year": 2026,
-  "commitsYear": 2353,
-  "commits12Months": 2392,
-  "commitsThisMonth": 465,
-  "activeRepositories": 27,
+  "commitsYear": 2360,
+  "commits12Months": 2348,
+  "commitsThisMonth": 472,
+  "activeRepositories": 28,
   "months": [
     {
       "month": "2025-12",
@@ -28,7 +28,7 @@
     },
     {
       "month": "2026-05",
-      "count": 51
+      "count": 0
     },
     {
       "month": "2026-06",
@@ -52,33 +52,33 @@
     },
     {
       "month": "2026-11",
-      "count": 465
+      "count": 472
     }
   ],
   "languages": [
     {
       "name": "Svelte",
-      "percent": 40.09443853993081
+      "percent": 39.82520930207061
     },
     {
       "name": "TypeScript",
-      "percent": 14.663049048502483
+      "percent": 14.894686865738324
     },
     {
       "name": "Python",
-      "percent": 11.210244394903784
+      "percent": 11.433099911331846
     },
     {
       "name": "JavaScript",
-      "percent": 9.456878804090259
+      "percent": 9.407030000534476
     },
     {
       "name": "Nim",
-      "percent": 8.565813724851301
+      "percent": 8.472048631810626
     },
     {
       "name": "Other",
-      "percent": 16.009575487721367
+      "percent": 15.967925288514117
     }
   ]
 }
